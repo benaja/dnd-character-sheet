@@ -14,6 +14,12 @@
 		25D0D9FF2AC3072400ED2EF9 /* dnd_character_sheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0D9FE2AC3072400ED2EF9 /* dnd_character_sheetTests.swift */; };
 		25D0DA092AC3072400ED2EF9 /* dnd_character_sheetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0DA082AC3072400ED2EF9 /* dnd_character_sheetUITests.swift */; };
 		25D0DA0B2AC3072400ED2EF9 /* dnd_character_sheetUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0DA0A2AC3072400ED2EF9 /* dnd_character_sheetUITestsLaunchTests.swift */; };
+		25D0DA192AC308EF00ED2EF9 /* CharactersOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0DA182AC308EF00ED2EF9 /* CharactersOverview.swift */; };
+		25D0DA1C2AC3092900ED2EF9 /* DndCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0DA1B2AC3092900ED2EF9 /* DndCharacter.swift */; };
+		25D0DA1E2AC30F1400ED2EF9 /* CreateCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0DA1D2AC30F1400ED2EF9 /* CreateCharacter.swift */; };
+		25D0DA212AC356F400ED2EF9 /* LabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0DA202AC356F400ED2EF9 /* LabelTextField.swift */; };
+		25D0DA232AC3659000ED2EF9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0DA222AC3659000ED2EF9 /* ImagePicker.swift */; };
+		25D0DA252AC366EB00ED2EF9 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0DA242AC366EB00ED2EF9 /* ProfileImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		25D0DA042AC3072400ED2EF9 /* dnd-character-sheetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "dnd-character-sheetUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D0DA082AC3072400ED2EF9 /* dnd_character_sheetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dnd_character_sheetUITests.swift; sourceTree = "<group>"; };
 		25D0DA0A2AC3072400ED2EF9 /* dnd_character_sheetUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dnd_character_sheetUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		25D0DA182AC308EF00ED2EF9 /* CharactersOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersOverview.swift; sourceTree = "<group>"; };
+		25D0DA1B2AC3092900ED2EF9 /* DndCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DndCharacter.swift; sourceTree = "<group>"; };
+		25D0DA1D2AC30F1400ED2EF9 /* CreateCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCharacter.swift; sourceTree = "<group>"; };
+		25D0DA202AC356F400ED2EF9 /* LabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextField.swift; sourceTree = "<group>"; };
+		25D0DA222AC3659000ED2EF9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		25D0DA242AC366EB00ED2EF9 /* ProfileImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,8 @@
 		25D0D9EB2AC3072300ED2EF9 /* dnd-character-sheet */ = {
 			isa = PBXGroup;
 			children = (
+				25D0DA1A2AC3091500ED2EF9 /* Models */,
+				25D0DA172AC308E000ED2EF9 /* Views */,
 				25D0D9EC2AC3072300ED2EF9 /* dnd_character_sheetApp.swift */,
 				25D0D9EE2AC3072300ED2EF9 /* ContentView.swift */,
 				25D0D9F02AC3072400ED2EF9 /* Assets.xcassets */,
@@ -127,6 +141,34 @@
 				25D0DA0A2AC3072400ED2EF9 /* dnd_character_sheetUITestsLaunchTests.swift */,
 			);
 			path = "dnd-character-sheetUITests";
+			sourceTree = "<group>";
+		};
+		25D0DA172AC308E000ED2EF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25D0DA1F2AC356D100ED2EF9 /* UI */,
+				25D0DA182AC308EF00ED2EF9 /* CharactersOverview.swift */,
+				25D0DA1D2AC30F1400ED2EF9 /* CreateCharacter.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25D0DA1A2AC3091500ED2EF9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				25D0DA1B2AC3092900ED2EF9 /* DndCharacter.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25D0DA1F2AC356D100ED2EF9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				25D0DA242AC366EB00ED2EF9 /* ProfileImage.swift */,
+				25D0DA202AC356F400ED2EF9 /* LabelTextField.swift */,
+				25D0DA222AC3659000ED2EF9 /* ImagePicker.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25D0DA1C2AC3092900ED2EF9 /* DndCharacter.swift in Sources */,
+				25D0DA252AC366EB00ED2EF9 /* ProfileImage.swift in Sources */,
 				25D0D9EF2AC3072300ED2EF9 /* ContentView.swift in Sources */,
+				25D0DA212AC356F400ED2EF9 /* LabelTextField.swift in Sources */,
+				25D0DA232AC3659000ED2EF9 /* ImagePicker.swift in Sources */,
 				25D0D9ED2AC3072300ED2EF9 /* dnd_character_sheetApp.swift in Sources */,
+				25D0DA192AC308EF00ED2EF9 /* CharactersOverview.swift in Sources */,
+				25D0DA1E2AC30F1400ED2EF9 /* CreateCharacter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"dnd-character-sheet/Preview Content\"";
+				DEVELOPMENT_TEAM = SF6PH87VZK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -456,6 +505,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"dnd-character-sheet/Preview Content\"";
+				DEVELOPMENT_TEAM = SF6PH87VZK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;

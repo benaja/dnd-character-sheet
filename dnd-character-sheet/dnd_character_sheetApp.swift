@@ -11,7 +11,7 @@ import SwiftUI
 struct dnd_character_sheetApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CharactersOverview()
         }
     }
 }
