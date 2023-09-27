@@ -9,9 +9,21 @@ import SwiftUI
 
 @main
 struct dnd_character_sheetApp: App {
+    @StateObject private var store = CharacterStore()
+    
     var body: some Scene {
         WindowGroup {
-            CharactersOverview()
+            CharactersOverview(characters: $store.characters)
+                .task {
+                    do {
+                        try await store.loadAll()
+                    } catch {
+                        fatalError(error.localizedDescription)
+//                        errorWrapper = ErrorWrapper(error: error,
+//                                                    guidance: "Scrumdinger will load sample data and continue.")
+                        
+                    }
+                }
         }
     }
 }

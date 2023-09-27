@@ -9,50 +9,51 @@ import SwiftUI
 import PhotosUI
 import CoreTransferable
 
-
-class DndCharacter: Identifiable, ObservableObject {
-    @Published var id: UUID
-    @Published var name: String
-    @Published var race: String
-    @Published var dndClass: String
-    @Published var level: Int
+@propertyWrapper
+public struct CodableIgnored<T>: Codable {
+    public var wrappedValue: T?
     
-    enum ImageState {
-        case empty
-        case loading(Progress)
-        case success(Image)
-        case failure(Error)
+    public init(wrappedValue: T?) {
+        self.wrappedValue = wrappedValue
     }
     
-    enum TransferError: Error {
-        case importFailed
+    public init(from decoder: Decoder) throws {
+        self.wrappedValue = nil
     }
-
     
-    struct ProfileImage: Transferable {
-        let image: Image
-        
-        static var transferRepresentation: some TransferRepresentation {
-            DataRepresentation(importedContentType: .image) { data in
-            #if canImport(AppKit)
-                guard let nsImage = NSImage(data: data) else {
-                    throw TransferError.importFailed
-                }
-                let image = Image(nsImage: nsImage)
-                return ProfileImage(image: image)
-            #elseif canImport(UIKit)
-                guard let uiImage = UIImage(data: data) else {
-                    throw TransferError.importFailed
-                }
-                let image = Image(uiImage: uiImage)
-                return ProfileImage(image: image)
-            #else
-                    throw TransferError.importFailed
-            #endif
-            }
-        }
+    public func encode(to encoder: Encoder) throws {
+        // Do nothing
     }
+}
 
+extension KeyedDecodingContainer {
+    public func decode<T>(
+        _ type: CodableIgnored<T>.Type,
+        forKey key: Self.Key) throws -> CodableIgnored<T>
+    {
+        return CodableIgnored(wrappedValue: nil)
+    }
+}
+
+extension KeyedEncodingContainer {
+    public mutating func encode<T>(
+        _ value: CodableIgnored<T>,
+        forKey key: KeyedEncodingContainer<K>.Key) throws
+    {
+        // Do nothing
+    }
+}
+
+
+struct DndCharacter: Identifiable, Codable {
+    var id: UUID
+    var name: String
+    var race: String
+    var dndClass: String
+    var level: Int
+    var profileImagePath: String?
+    
+    var profileImage: UIImage?
     
     init(id: UUID = UUID(), name: String, race: String, dndClass: String, level: Int = 1) {
         self.id = id
@@ -62,43 +63,35 @@ class DndCharacter: Identifiable, ObservableObject {
         self.level = level
     }
     
-    static var emptyCharacter: DndCharacter {
-        DndCharacter(name: "", race: "", dndClass: "", level: 1)
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        id = try values.decode(UUID.self, forKey: .id)
+        name = try values.decode(String.self, forKey: .name)
+        race = try values.decode(String.self, forKey: .race)
+        dndClass = try values.decodeIfPresent(String.self, forKey: .dndClass) ?? ""
+        level = try values.decode(Int.self, forKey: .level)
+        profileImagePath = try values.decode(String?.self, forKey: .profileImagePath)
     }
     
-    @Published private(set) var imageState: ImageState = .empty
-    
-    @Published var imageSelection: PhotosPickerItem? = nil {
-        didSet {
-            if let imageSelection {
-                let progress = loadTransferable(from: imageSelection)
-                imageState = .loading(progress)
-            } else {
-                imageState = .empty
-            }
-        }
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case race
+        case dndClass
+        case level
+        case profileImagePath
     }
     
-    // MARK: - Private Methods
-    
-    private func loadTransferable(from imageSelection: PhotosPickerItem) -> Progress {
-        return imageSelection.loadTransferable(type: ProfileImage.self) { result in
-            DispatchQueue.main.async {
-                guard imageSelection == self.imageSelection else {
-                    print("Failed to get the selected item.")
-                    return
-                }
-                switch result {
-                case .success(let profileImage?):
-                    self.imageState = .success(profileImage.image)
-                case .success(nil):
-                    self.imageState = .empty
-                case .failure(let error):
-                    self.imageState = .failure(error)
-                }
-            }
-        }
+    func encode(to encoder: Encoder) throws {
+        var container = encoder.container(keyedBy: CodingKeys.self)
+        try container.encode(id, forKey: .id)
+        try container.encode(name, forKey: .name)
+        try container.encode(race, forKey: .race)
+        try container.encode(level, forKey: .level)
+        try container.encode(dndClass, forKey: .dndClass)
+        try container.encode(profileImagePath, forKey: .profileImagePath)
     }
+
 }
 
 extension DndCharacter {
@@ -108,5 +101,10 @@ extension DndCharacter {
         DndCharacter(name: "Milo", race: "Halfling", dndClass: "Fihter", level: 3),
         DndCharacter(name: "Halgur", race: "Orc", dndClass: "Wizard", level: 8),
     ]
+    
+    
+    static let emptyCharacter = {
+        DndCharacter(name: "", race: "", dndClass: "", level: 1)
+    }
 }
 

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CharactersOverview: View {
-    var characters = DndCharacter.sampleData
+    @Binding var characters: [DndCharacter]
     @State var showCreateCharacter = false
     
     var body: some View {
@@ -45,5 +45,5 @@ struct CharactersOverview: View {
 }
 
 #Preview {
-    CharactersOverview()
+    CharactersOverview(characters: .constant(DndCharacter.sampleData))
 }

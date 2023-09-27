@@ -9,7 +9,8 @@ import SwiftUI
 
 struct CreateCharacter: View {
     @Binding var isPresentingNewCharacterView: Bool
-    @State var character: DndCharacter = DndCharacter.emptyCharacter
+    @State var character: DndCharacter = DndCharacter.emptyCharacter()
+    @StateObject private var store = CharacterStore()
     
     
     var body: some View {
@@ -27,7 +28,7 @@ struct CreateCharacter: View {
                                 set: { character.level = Int($0) ?? 0 }
                 ), placeholder: "Elf", keyboardType: .numberPad)
                 
-                EditableCircularProfileImage(viewModel: character)
+                EditableCircularProfileImage(image: $character.profileImage)
                 Spacer()
             }
             .padding()
@@ -39,17 +40,24 @@ struct CreateCharacter: View {
                 }
                 ToolbarItem(placement: .confirmationAction) {
                     Button("Create") {
+                        Task {
+                            do {
+                                try await store.save(character: character)
+                                character = DndCharacter.emptyCharacter()
+                            } catch {
+                                fatalError(error.localizedDescription)
+                            }
+                        }
                         isPresentingNewCharacterView = false
                     }
                 }
             }
         }
-
     }
 }
 
 #Preview {
-    @State var character: DndCharacter = DndCharacter.emptyCharacter
+    @State var character: DndCharacter = DndCharacter.emptyCharacter()
     @State var isPresenting = true
     
     return CreateCharacter(isPresentingNewCharacterView: $isPresenting)

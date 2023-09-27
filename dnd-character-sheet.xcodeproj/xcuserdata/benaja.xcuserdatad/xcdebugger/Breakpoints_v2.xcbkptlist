@@ -1,0 +1,710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7D657423-7452-4C12-9299-924D29061F3B"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A2E1FE44-3EDE-4D0A-9202-E4EA35A48D5F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Models/CharacterStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "save(character:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A2E1FE44-3EDE-4D0A-9202-E4EA35A48D5F - 61433b77cba6d892"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in dnd_character_sheet.CharacterStore.save(character: dnd_character_sheet.DndCharacter) async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "852">
+               </Location>
+               <Location
+                  uuid = "A2E1FE44-3EDE-4D0A-9202-E4EA35A48D5F - 61433b77cba6d892"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in dnd_character_sheet.CharacterStore.save(character: dnd_character_sheet.DndCharacter) async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "356">
+               </Location>
+               <Location
+                  uuid = "A2E1FE44-3EDE-4D0A-9202-E4EA35A48D5F - 61433b77cba6d892"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; () in dnd_character_sheet.CharacterStore.save(character: dnd_character_sheet.DndCharacter) async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "488">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74A759EE-B7D9-49B7-A741-FE7EF1F1A33F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Models/CharacterStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "save(character:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6FDB2AA-C3A6-4679-8C2E-5DD63EC708EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Models/CharacterStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "loadAll()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A6FDB2AA-C3A6-4679-8C2E-5DD63EC708EC - ea8935688aea1b6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "328">
+               </Location>
+               <Location
+                  uuid = "A6FDB2AA-C3A6-4679-8C2E-5DD63EC708EC - ea8935688aea1b6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "360">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BB266E32-9C5D-4997-B9FC-B9B74C236175"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Models/CharacterStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "loadAll()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BB266E32-9C5D-4997-B9FC-B9B74C236175 - 7111bf5eb1f96020"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "BB266E32-9C5D-4997-B9FC-B9B74C236175 - ea8935688aea1bca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "BB266E32-9C5D-4997-B9FC-B9B74C236175 - ea8935688aea1bca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "952">
+               </Location>
+               <Location
+                  uuid = "BB266E32-9C5D-4997-B9FC-B9B74C236175 - ea8935688aea1bca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "716">
+               </Location>
+               <Location
+                  uuid = "BB266E32-9C5D-4997-B9FC-B9B74C236175 - ea8935688aea1bca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "948">
+               </Location>
+               <Location
+                  uuid = "BB266E32-9C5D-4997-B9FC-B9B74C236175 - ea8935688aea1bca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "1260">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDF43720-DA99-4C88-B1DF-01375F520467"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Models/CharacterStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "loadAll()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DDF43720-DA99-4C88-B1DF-01375F520467 - ea8935688aea1be9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "952">
+               </Location>
+               <Location
+                  uuid = "DDF43720-DA99-4C88-B1DF-01375F520467 - ea8935688aea1be9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "968">
+               </Location>
+               <Location
+                  uuid = "DDF43720-DA99-4C88-B1DF-01375F520467 - ea8935688aea1a08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1136">
+               </Location>
+               <Location
+                  uuid = "DDF43720-DA99-4C88-B1DF-01375F520467 - ea8935688aea1a08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1448">
+               </Location>
+               <Location
+                  uuid = "DDF43720-DA99-4C88-B1DF-01375F520467 - ea8935688aea1a08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "1312">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "92C591AE-673E-449E-A626-31ABE6F9CD31"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Models/CharacterStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "loadAll()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99CD0F2A-DDC0-4297-B543-809D81FDD08F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Models/CharacterStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "loadAll()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7F203FC3-9707-4E1D-B342-A2116104C5D1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Models/CharacterStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "loadAll()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7F203FC3-9707-4E1D-B342-A2116104C5D1 - ea8935688aea1ab4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1532">
+               </Location>
+               <Location
+                  uuid = "7F203FC3-9707-4E1D-B342-A2116104C5D1 - ea8935688aea1ab4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1404">
+               </Location>
+               <Location
+                  uuid = "7F203FC3-9707-4E1D-B342-A2116104C5D1 - ea8935688aea1ab4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1588">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E3A4987-132F-442D-903E-3A0B2E3F9909"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Models/CharacterStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "loadAll()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9E3A4987-132F-442D-903E-3A0B2E3F9909 - 83bb5a5ab64d9b4a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "248">
+               </Location>
+               <Location
+                  uuid = "9E3A4987-132F-442D-903E-3A0B2E3F9909 - 7889c81fe3ff991a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "36">
+               </Location>
+               <Location
+                  uuid = "9E3A4987-132F-442D-903E-3A0B2E3F9909 - 377c680a24c94448"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "9E3A4987-132F-442D-903E-3A0B2E3F9909 - ee0ef1dea04e6d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "9E3A4987-132F-442D-903E-3A0B2E3F9909 - ee0ef1dea04e6d7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "58"
+                  endingLineNumber = "58"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "9E3A4987-132F-442D-903E-3A0B2E3F9909 - ea8935688aea19fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1792">
+               </Location>
+               <Location
+                  uuid = "9E3A4987-132F-442D-903E-3A0B2E3F9909 - ea8935688aea19fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1028">
+               </Location>
+               <Location
+                  uuid = "9E3A4987-132F-442D-903E-3A0B2E3F9909 - ea8935688aea19fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "57"
+                  endingLineNumber = "57"
+                  offsetFromSymbolStart = "1020">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB2C601A-A022-4E99-AB7E-359AEAD939FB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Models/CharacterStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "loadAll()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CB2C601A-A022-4E99-AB7E-359AEAD939FB - ea8935688aea1af2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "49"
+                  endingLineNumber = "49"
+                  offsetFromSymbolStart = "1564">
+               </Location>
+               <Location
+                  uuid = "CB2C601A-A022-4E99-AB7E-359AEAD939FB - ea8935688aea1ad3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1552">
+               </Location>
+               <Location
+                  uuid = "CB2C601A-A022-4E99-AB7E-359AEAD939FB - ea8935688aea1ad3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "1736">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "54F18232-6627-4C35-9773-C3665000F1EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Models/CharacterStore.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "loadAll()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "54F18232-6627-4C35-9773-C3665000F1EC - 7111bf5eb1f96003"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "54F18232-6627-4C35-9773-C3665000F1EC - ea8935688aea1be9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  uuid = "54F18232-6627-4C35-9773-C3665000F1EC - ea8935688aea1be9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "972">
+               </Location>
+               <Location
+                  uuid = "54F18232-6627-4C35-9773-C3665000F1EC - ea8935688aea1be9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1284">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
