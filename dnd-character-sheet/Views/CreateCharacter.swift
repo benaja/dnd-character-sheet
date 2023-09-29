@@ -9,8 +9,8 @@ import SwiftUI
 
 struct CreateCharacter: View {
     @Binding var isPresentingNewCharacterView: Bool
-    @State var character: DndCharacter = DndCharacter.emptyCharacter()
-    @StateObject private var store = CharacterStore()
+    @ObservedObject var character: DndCharacter = DndCharacter.emptyCharacter()
+    @EnvironmentObject var store: CharacterStore
     
     
     var body: some View {
@@ -22,11 +22,7 @@ struct CreateCharacter: View {
                     .padding(.bottom)
                 LabelTextField("Class", value: $character.dndClass, placeholder: "Elf")
                     .padding(.bottom)
-                LabelTextField("Level",
-                               value: Binding(
-                                get: { String(character.level) },
-                                set: { character.level = Int($0) ?? 0 }
-                ), placeholder: "Elf", keyboardType: .numberPad)
+                LabelTextField("Level", value: $character.level, placeholder: "Elf")
                 
                 EditableCircularProfileImage(image: $character.profileImage)
                 Spacer()
@@ -43,7 +39,7 @@ struct CreateCharacter: View {
                         Task {
                             do {
                                 try await store.save(character: character)
-                                character = DndCharacter.emptyCharacter()
+//                                character = DndCharacter.emptyCharacter()
                             } catch {
                                 fatalError(error.localizedDescription)
                             }

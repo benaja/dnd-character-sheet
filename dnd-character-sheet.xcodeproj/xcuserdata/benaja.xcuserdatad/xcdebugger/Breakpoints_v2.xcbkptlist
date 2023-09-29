@@ -14,8 +14,8 @@
             filePath = "dnd-character-sheet/Models/CharacterStore.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "save(character:)"
             landmarkType = "7">
             <Locations>
@@ -77,8 +77,8 @@
             filePath = "dnd-character-sheet/Models/CharacterStore.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "save(character:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -437,8 +437,8 @@
             filePath = "dnd-character-sheet/Models/CharacterStore.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "loadAll()"
             landmarkType = "7">
             <Locations>
@@ -575,8 +575,8 @@
             filePath = "dnd-character-sheet/Models/CharacterStore.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "loadAll()"
             landmarkType = "7">
             <Locations>
@@ -624,6 +624,66 @@
                   startingLineNumber = "48"
                   endingLineNumber = "48"
                   offsetFromSymbolStart = "1736">
+               </Location>
+               <Location
+                  uuid = "CB2C601A-A022-4E99-AB7E-359AEAD939FB - ea8935688aea199d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "2116">
+               </Location>
+               <Location
+                  uuid = "CB2C601A-A022-4E99-AB7E-359AEAD939FB - ea8935688aea197e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "2068">
+               </Location>
+               <Location
+                  uuid = "CB2C601A-A022-4E99-AB7E-359AEAD939FB - ea8935688aea195f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "2304">
+               </Location>
+               <Location
+                  uuid = "CB2C601A-A022-4E99-AB7E-359AEAD939FB - ea8935688aea195f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async throws -&gt; Swift.Array&lt;dnd_character_sheet.DndCharacter&gt; in dnd_character_sheet.CharacterStore.loadAll() async throws -&gt; ()"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Models/CharacterStore.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "2352">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -704,6 +764,54 @@
                   offsetFromSymbolStart = "1284">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B19AA410-AA9C-4A71-AA83-6B9AA82BBE07"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Models/DndCharacter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "encode(to:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5C7B0C76-3B33-4166-AD82-4A3672ECE5A3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Models/DndCharacter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "init(from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C4A3AC87-E29D-4749-A24F-AFEEEC6B9752"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Views/UI/ProfileImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "init(image:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

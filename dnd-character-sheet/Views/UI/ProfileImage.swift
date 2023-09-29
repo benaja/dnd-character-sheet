@@ -74,6 +74,14 @@ struct EditableCircularProfileImage: View {
         }
     }
     
+    init(image: Binding<UIImage?>) {
+        self._image = image
+        if let imageValue = image.wrappedValue {
+            let image = Image(uiImage: imageValue)
+            _imageState = State(wrappedValue:.success(image))
+        }
+    }
+    
     enum TransferError: Error {
         case importFailed
     }

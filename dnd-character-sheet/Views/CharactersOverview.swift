@@ -13,8 +13,8 @@ struct CharactersOverview: View {
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(characters) { character in
+            List ($characters, id: \.id) { $character in
+                NavigationLink(destination: CharacterView(character: $character)) {
                     VStack (alignment: .leading) {
                         HStack {
                             VStack (alignment: .leading) {
@@ -28,6 +28,7 @@ struct CharactersOverview: View {
                         }
                     }
                 }
+                
             }
             .navigationTitle("Characters")
             .toolbar{

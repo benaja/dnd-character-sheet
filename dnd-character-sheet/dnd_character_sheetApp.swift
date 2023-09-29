@@ -24,6 +24,6 @@ struct dnd_character_sheetApp: App {
                         
                     }
                 }
-        }
+        }.environmentObject(store)
     }
 }
