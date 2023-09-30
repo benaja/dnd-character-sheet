@@ -6,21 +6,15 @@
 //
 
 import Foundation
+import SwiftData
 
-protocol BaseCharacter {
-    var id: UUID { get set }
-    var name: String { get }
-    var race: String { get }
-    var dndClass: String { get }
-    var level: String { get }
-    var profileImagePath: String? { get }
-}
-
-struct DndCharacterModel: BaseCharacter {
+@Model
+class DndCharacterModel: Identifiable {
     var id: UUID
     var name: String
-    var race: String
-    var dndClass: String
-    var level: String
-    var profileImagePath: String?
+    
+    init(name: String) {
+        self.id = UUID()
+        self.name = name
+    }
 }

@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253EAB1D2AC8094900405111 /* DndCharacterModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 253EAB1B2AC8094900405111 /* DndCharacterModel.xcdatamodeld */; };
+		253EAB1F2AC80A0000405111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253EAB1E2AC80A0000405111 /* AppDelegate.swift */; };
 		257DFD422AC4195600DBF07C /* CharacterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DFD412AC4195600DBF07C /* CharacterStore.swift */; };
 		257DFD442AC44AA100DBF07C /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DFD432AC44AA100DBF07C /* CharacterView.swift */; };
+		257EB9BC2AC6CB3800A2BFE5 /* GeneralCharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257EB9BB2AC6CB3800A2BFE5 /* GeneralCharacterInfo.swift */; };
+		257EB9BE2AC6CC7600A2BFE5 /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257EB9BD2AC6CC7600A2BFE5 /* InventoryView.swift */; };
+		257EB9C02AC6CC8200A2BFE5 /* CombatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257EB9BF2AC6CC8200A2BFE5 /* CombatView.swift */; };
+		257EB9C22AC6CC9300A2BFE5 /* Spellsview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257EB9C12AC6CC9300A2BFE5 /* Spellsview.swift */; };
+		257EB9C42AC6CCB200A2BFE5 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257EB9C32AC6CCB200A2BFE5 /* StatsView.swift */; };
 		25BBBD112AC46AEB004E0D98 /* DndCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25BBBD102AC46AEB004E0D98 /* DndCharacterModel.swift */; };
 		25BBBD142AC47A47004E0D98 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 25BBBD132AC47A47004E0D98 /* ObjectMapper */; };
 		25D0D9ED2AC3072300ED2EF9 /* dnd_character_sheetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0D9EC2AC3072300ED2EF9 /* dnd_character_sheetApp.swift */; };
@@ -44,8 +51,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		253EAB1C2AC8094900405111 /* DndCharacterModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DndCharacterModel.xcdatamodel; sourceTree = "<group>"; };
+		253EAB1E2AC80A0000405111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		257DFD412AC4195600DBF07C /* CharacterStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterStore.swift; sourceTree = "<group>"; };
 		257DFD432AC44AA100DBF07C /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		257EB9BB2AC6CB3800A2BFE5 /* GeneralCharacterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCharacterInfo.swift; sourceTree = "<group>"; };
+		257EB9BD2AC6CC7600A2BFE5 /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		257EB9BF2AC6CC8200A2BFE5 /* CombatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombatView.swift; sourceTree = "<group>"; };
+		257EB9C12AC6CC9300A2BFE5 /* Spellsview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spellsview.swift; sourceTree = "<group>"; };
+		257EB9C32AC6CCB200A2BFE5 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		25BBBD102AC46AEB004E0D98 /* DndCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DndCharacterModel.swift; sourceTree = "<group>"; };
 		25D0D9E92AC3072300ED2EF9 /* dnd-character-sheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dnd-character-sheet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25D0D9EC2AC3072300ED2EF9 /* dnd_character_sheetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dnd_character_sheetApp.swift; sourceTree = "<group>"; };
@@ -92,6 +106,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		257EB9BA2AC6CB2200A2BFE5 /* CharacterTabs */ = {
+			isa = PBXGroup;
+			children = (
+				257EB9BB2AC6CB3800A2BFE5 /* GeneralCharacterInfo.swift */,
+				257EB9BD2AC6CC7600A2BFE5 /* InventoryView.swift */,
+				257EB9BF2AC6CC8200A2BFE5 /* CombatView.swift */,
+				257EB9C12AC6CC9300A2BFE5 /* Spellsview.swift */,
+				257EB9C32AC6CCB200A2BFE5 /* StatsView.swift */,
+			);
+			path = CharacterTabs;
+			sourceTree = "<group>";
+		};
 		25D0D9E02AC3072300ED2EF9 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +145,7 @@
 				25D0DA172AC308E000ED2EF9 /* Views */,
 				25D0D9EC2AC3072300ED2EF9 /* dnd_character_sheetApp.swift */,
 				25D0D9EE2AC3072300ED2EF9 /* ContentView.swift */,
+				253EAB1E2AC80A0000405111 /* AppDelegate.swift */,
 				25D0D9F02AC3072400ED2EF9 /* Assets.xcassets */,
 				25D0D9F22AC3072400ED2EF9 /* dnd_character_sheet.entitlements */,
 				25D0D9F32AC3072400ED2EF9 /* Preview Content */,
@@ -154,6 +181,7 @@
 		25D0DA172AC308E000ED2EF9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				257EB9BA2AC6CB2200A2BFE5 /* CharacterTabs */,
 				25D0DA1F2AC356D100ED2EF9 /* UI */,
 				25D0DA182AC308EF00ED2EF9 /* CharactersOverview.swift */,
 				25D0DA1D2AC30F1400ED2EF9 /* CreateCharacter.swift */,
@@ -168,6 +196,7 @@
 				257DFD412AC4195600DBF07C /* CharacterStore.swift */,
 				25D0DA1B2AC3092900ED2EF9 /* DndCharacter.swift */,
 				25BBBD102AC46AEB004E0D98 /* DndCharacterModel.swift */,
+				253EAB1B2AC8094900405111 /* DndCharacterModel.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -318,14 +347,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257EB9BC2AC6CB3800A2BFE5 /* GeneralCharacterInfo.swift in Sources */,
 				25D0DA1C2AC3092900ED2EF9 /* DndCharacter.swift in Sources */,
 				25D0DA252AC366EB00ED2EF9 /* ProfileImage.swift in Sources */,
+				257EB9BE2AC6CC7600A2BFE5 /* InventoryView.swift in Sources */,
+				257EB9C42AC6CCB200A2BFE5 /* StatsView.swift in Sources */,
 				257DFD442AC44AA100DBF07C /* CharacterView.swift in Sources */,
+				253EAB1D2AC8094900405111 /* DndCharacterModel.xcdatamodeld in Sources */,
 				25D0D9EF2AC3072300ED2EF9 /* ContentView.swift in Sources */,
 				25D0DA212AC356F400ED2EF9 /* LabelTextField.swift in Sources */,
 				257DFD422AC4195600DBF07C /* CharacterStore.swift in Sources */,
 				25D0DA232AC3659000ED2EF9 /* ImagePicker.swift in Sources */,
 				25D0D9ED2AC3072300ED2EF9 /* dnd_character_sheetApp.swift in Sources */,
+				253EAB1F2AC80A0000405111 /* AppDelegate.swift in Sources */,
+				257EB9C22AC6CC9300A2BFE5 /* Spellsview.swift in Sources */,
+				257EB9C02AC6CC8200A2BFE5 /* CombatView.swift in Sources */,
 				25BBBD112AC46AEB004E0D98 /* DndCharacterModel.swift in Sources */,
 				25D0DA192AC308EF00ED2EF9 /* CharactersOverview.swift in Sources */,
 				25D0DA1E2AC30F1400ED2EF9 /* CreateCharacter.swift in Sources */,
@@ -698,6 +734,19 @@
 			productName = ObjectMapper;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		253EAB1B2AC8094900405111 /* DndCharacterModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				253EAB1C2AC8094900405111 /* DndCharacterModel.xcdatamodel */,
+			);
+			currentVersion = 253EAB1C2AC8094900405111 /* DndCharacterModel.xcdatamodel */;
+			path = DndCharacterModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 25D0D9E12AC3072300ED2EF9 /* Project object */;
 }

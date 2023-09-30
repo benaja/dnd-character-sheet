@@ -109,6 +109,7 @@ let transform = TransformOf<Int, String>(fromJSON: { (value: String?) -> Int? in
 })
 
 
+
 class DndCharacter: Mappable, ObservableObject {
     var id: UUID = UUID()
     var name: String = ""
@@ -118,10 +119,10 @@ class DndCharacter: Mappable, ObservableObject {
     var profileImagePath: String? = ""
     var profileImage: UIImage?
     
-    var hp: Int = 0;
-    var maxHp: Int = 0;
-    var hidDice: String = ""
-    var ac: String = ""
+    var hp: Int = 15;
+    var maxHp: Int = 22;
+    var hidDice: String = "1w8"
+    var ac: String = "18"
     
     var str: Stat!
     var dex: Stat!
@@ -262,7 +263,7 @@ class DndCharacter: Mappable, ObservableObject {
     class Stat: Mappable {
         var value: Int = 10
         var modifier: Int = 0;
-        var prof: Bool = true
+        var prof: Bool = false
       
         func mapping(map: ObjectMapper.Map) {
             value <- map["value"]

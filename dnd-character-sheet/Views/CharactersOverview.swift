@@ -6,26 +6,27 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct CharactersOverview: View {
-    @Binding var characters: [DndCharacter]
+    @Environment(\.modelContext) private var context
+    @Query private var characters: [DndCharacterModel]
+//    @Binding var characters: [DndCharacter]
     @State var showCreateCharacter = false
     
     var body: some View {
         NavigationStack {
-            List ($characters, id: \.id) { $character in
-                NavigationLink(destination: CharacterView(character: $character)) {
-                    VStack (alignment: .leading) {
-                        HStack {
-                            VStack (alignment: .leading) {
-                                Text(character.name)
-                                Text("Race: \(character.race), Class: \(character.dndClass)")
-                                    .font(.caption)
-                            }
-                            Spacer()
-                            Text("Level: \(character.level)")
-                                .font(.caption)
+            List (characters, id: \.id) { character in
+                VStack (alignment: .leading) {
+                    HStack {
+                        VStack (alignment: .leading) {
+                            Text(character.name)
+//                            Text("Race: \(character.), Class: \(character.dndClass)")
+//                                .font(.caption)
                         }
+                        Spacer()
+//                        Text("Level: \(character.level)")
+//                            .font(.caption)
                     }
                 }
                 
@@ -33,7 +34,7 @@ struct CharactersOverview: View {
             .navigationTitle("Characters")
             .toolbar{
                 Button(action: {
-                    showCreateCharacter = true
+                    context.insert(DndCharacterModel(name: "cool"))
                 }) {
                     Image(systemName: "plus")
                 }
@@ -46,5 +47,5 @@ struct CharactersOverview: View {
 }
 
 #Preview {
-    CharactersOverview(characters: .constant(DndCharacter.sampleData))
+    CharactersOverview()
 }

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct dnd_character_sheetApp: App {
@@ -13,7 +14,7 @@ struct dnd_character_sheetApp: App {
     
     var body: some Scene {
         WindowGroup {
-            CharactersOverview(characters: $store.characters)
+            CharactersOverview()
                 .task {
                     do {
                         try await store.loadAll()
@@ -24,6 +25,8 @@ struct dnd_character_sheetApp: App {
                         
                     }
                 }
-        }.environmentObject(store)
+        }
+        .environmentObject(store)
+        .modelContainer(for: DndCharacterModel.self)
     }
 }
