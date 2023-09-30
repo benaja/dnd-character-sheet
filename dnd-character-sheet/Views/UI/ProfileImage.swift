@@ -61,7 +61,11 @@ struct CircularProfileImage: View {
 }
 
 struct EditableCircularProfileImage: View {
-    @Binding var image: UIImage?
+    @Binding var imagePath: String?
+    lazy var image: UIImage? = {
+        imageByPath()
+    }()
+//    @Binding var image: UIImage?
     @State var imageState = ImageState.empty
     @State var imageSelection: PhotosPickerItem? = nil {
         didSet {
@@ -74,10 +78,24 @@ struct EditableCircularProfileImage: View {
         }
     }
     
-    init(image: Binding<UIImage?>) {
-        self._image = image
-        if let imageValue = image.wrappedValue {
-            let image = Image(uiImage: imageValue)
+    func imageByPath() -> UIImage? {
+        guard self.imagePath != nil else {
+            return nil
+        }
+        do {
+            let path = try Self.imagePath().appendingPathComponent(self.imagePath!)
+            let imageData = try Data(contentsOf: path)
+            return UIImage(data: imageData)
+        } catch {
+            fatalError(error.localizedDescription)
+        }
+
+    }
+    
+    init(imagePath: Binding<String?>) {
+        self._imagePath = imagePath
+        if let image = image {
+            let image = Image(uiImage: image)
             _imageState = State(wrappedValue:.success(image))
         }
     }
@@ -126,8 +144,22 @@ struct EditableCircularProfileImage: View {
                 }
                 switch result {
                 case .success(let profileImage?):
-                    self.image = profileImage.uiImage
+//                    self.image = profileImage.uiImage
                     self.imageState = .success(profileImage.image)
+                    if let data = profileImage.uiImage.jpegData(compressionQuality: 1.0) {
+                        let imageName = "\(UUID().uuidString).jpg"
+                        let path = try? Self.imagePath().appendingPathComponent(imageName)
+                        guard path != nil else {
+                            return
+                        }
+                        do {
+                            try data.write(to: path!)
+                            self.imagePath = imageName
+                            print(imagePath ?? "")
+                        } catch {
+                            fatalError(error.localizedDescription)
+                        }
+                    }
                 case .success(nil):
                     self.imageState = .empty
                 case .failure(let error):
@@ -135,5 +167,16 @@ struct EditableCircularProfileImage: View {
                 }
             }
         }
+    }
+    
+    private static func imagePath() throws -> URL {
+        let path = try FileManager.default.url(for: .documentDirectory,
+                                    in: .userDomainMask,
+                                    appropriateFor: nil,
+                                    create: true)
+                .appendingPathComponent("images")
+        
+        try FileManager.default.createDirectory(atPath: path.path, withIntermediateDirectories: true, attributes: nil)
+        return path;
     }
 }

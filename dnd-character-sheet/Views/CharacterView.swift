@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CharacterView: View {
-    @Binding var character: DndCharacter
+    var character: DndCharacter
     @State var selection = TabViews.stats
     
     enum TabViews {
@@ -36,7 +36,7 @@ struct CharacterView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            StatsView(character: $character)
+            StatsView(character: .constant(character))
                 .tabItem {
                     Label("Stats", systemImage: "chart.bar")
                 }.tag(TabViews.stats)
@@ -52,7 +52,7 @@ struct CharacterView: View {
                 .tabItem {
                     Label("Spells", systemImage: "flame")
                 }.tag(TabViews.spells)
-            GeneralCharacterInfo(character: $character)
+            GeneralCharacterInfo(character: .constant(character))
                 .tabItem {
                     Label("Character", systemImage: "figure.stand")
                 }.tag(TabViews.character)
@@ -65,6 +65,6 @@ struct CharacterView: View {
 
 #Preview {
     NavigationStack {
-        CharacterView(character: .constant(DndCharacter.sampleData[0]))
+        CharacterView(character: DndCharacter.sampleData[0])
     }
 }

@@ -31,7 +31,7 @@ struct GeneralCharacterInfo: View {
             }
             .padding(.bottom)
             
-            EditableCircularProfileImage(image: $character.profileImage)
+            EditableCircularProfileImage(imagePath: $character.profileImagePath)
             
             
             Spacer()

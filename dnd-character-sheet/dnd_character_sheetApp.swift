@@ -10,23 +10,23 @@ import SwiftData
 
 @main
 struct dnd_character_sheetApp: App {
-    @StateObject private var store = CharacterStore()
+//    @StateObject private var store = CharacterStore()
     
     var body: some Scene {
         WindowGroup {
             CharactersOverview()
-                .task {
-                    do {
-                        try await store.loadAll()
-                    } catch {
-                        fatalError(error.localizedDescription)
-//                        errorWrapper = ErrorWrapper(error: error,
-//                                                    guidance: "Scrumdinger will load sample data and continue.")
-                        
-                    }
-                }
+//                .task {
+//                    do {
+//                        try await store.loadAll()
+//                    } catch {
+//                        fatalError(error.localizedDescription)
+////                        errorWrapper = ErrorWrapper(error: error,
+////                                                    guidance: "Scrumdinger will load sample data and continue.")
+//                        
+//                    }
+//                }
         }
-        .environmentObject(store)
-        .modelContainer(for: DndCharacterModel.self)
+        .modelContainer(for: DndCharacter.self)
+//        .environmentObject(store)
     }
 }

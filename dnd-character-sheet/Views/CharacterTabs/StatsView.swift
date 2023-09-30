@@ -6,11 +6,9 @@
 //
 
 import SwiftUI
-import CoreData
 
 struct StatsView: View {
     @Binding var character: DndCharacter
-    var container: NSPersistentContainer!
     
     var body: some View {
         VStack  {
@@ -76,12 +74,6 @@ struct StatsView: View {
                     
                 }.frame(width: 100, height: 100)
             }
-        }
-        .onAppear {
-            guard container != nil else {
-                fatalError("This view needs a persistent container.")
-            }
-            print("view apperad")
         }
     }
     

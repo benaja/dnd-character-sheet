@@ -16,8 +16,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "74"
             endingLineNumber = "74"
-            landmarkName = "save(character:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "A2E1FE44-3EDE-4D0A-9202-E4EA35A48D5F - 61433b77cba6d892"
@@ -79,8 +79,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
             endingLineNumber = "77"
-            landmarkName = "save(character:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -95,8 +95,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
             endingLineNumber = "38"
-            landmarkName = "loadAll()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "A6FDB2AA-C3A6-4679-8C2E-5DD63EC708EC - ea8935688aea1b6d"
@@ -143,8 +143,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
-            landmarkName = "loadAll()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "BB266E32-9C5D-4997-B9FC-B9B74C236175 - 7111bf5eb1f96020"
@@ -251,8 +251,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
             endingLineNumber = "43"
-            landmarkName = "loadAll()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "DDF43720-DA99-4C88-B1DF-01375F520467 - ea8935688aea1be9"
@@ -344,8 +344,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "44"
             endingLineNumber = "44"
-            landmarkName = "loadAll()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -360,8 +360,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "45"
             endingLineNumber = "45"
-            landmarkName = "loadAll()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -376,8 +376,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
             endingLineNumber = "47"
-            landmarkName = "loadAll()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "7F203FC3-9707-4E1D-B342-A2116104C5D1 - ea8935688aea1ab4"
@@ -439,8 +439,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "63"
             endingLineNumber = "63"
-            landmarkName = "loadAll()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "9E3A4987-132F-442D-903E-3A0B2E3F9909 - 83bb5a5ab64d9b4a"
@@ -577,8 +577,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
-            landmarkName = "loadAll()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "CB2C601A-A022-4E99-AB7E-359AEAD939FB - ea8935688aea1af2"
@@ -700,8 +700,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
             endingLineNumber = "42"
-            landmarkName = "loadAll()"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
                   uuid = "54F18232-6627-4C35-9773-C3665000F1EC - 7111bf5eb1f96003"
@@ -769,38 +769,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B19AA410-AA9C-4A71-AA83-6B9AA82BBE07"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "dnd-character-sheet/Models/DndCharacter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "encode(to:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "5C7B0C76-3B33-4166-AD82-4A3672ECE5A3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "dnd-character-sheet/Models/DndCharacter.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
-            landmarkName = "init(from:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "C4A3AC87-E29D-4749-A24F-AFEEEC6B9752"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -808,10 +776,566 @@
             filePath = "dnd-character-sheet/Views/UI/ProfileImage.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "init(image:)"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
+            landmarkName = "init(imagePath:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E0143F6-2FD1-4A76-95B6-02B88DF269F1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Views/UI/ProfileImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "image"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2F0B057B-1A11-484F-9966-00A5466785F6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Views/CreateCharacter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "2F0B057B-1A11-484F-9966-00A5466785F6 - 950c584e1bfda92a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #2 () -&gt; SwiftUI.Button&lt;SwiftUI.Text&gt; in closure #2 () -&gt; &lt;&lt;opaque return type of static SwiftUI.ToolbarContentBuilder.buildBlock&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: SwiftUI.ToolbarContent, &#x3c4;_0_1: SwiftUI.ToolbarContent&gt;(&#x3c4;_0_0, &#x3c4;_0_1) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ToolbarContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in dnd_character_sheet.CreateCharacter.body.getter : some"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/CreateCharacter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "2F0B057B-1A11-484F-9966-00A5466785F6 - a70a592e1da4c5db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #2 () -&gt; SwiftUI.Button&lt;SwiftUI.Text&gt; in closure #2 () -&gt; &lt;&lt;opaque return type of static SwiftUI.ToolbarContentBuilder.buildBlock&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: SwiftUI.ToolbarContent, &#x3c4;_0_1: SwiftUI.ToolbarContent&gt;(&#x3c4;_0_0, &#x3c4;_0_1) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ToolbarContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in dnd_character_sheet.CreateCharacter.body.getter : some"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/CreateCharacter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "100">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51205D40-E591-4659-AB9C-A478123D3320"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Views/UI/ProfileImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "loadTransferable(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "51205D40-E591-4659-AB9C-A478123D3320 - 720ebc08c515c654"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;dnd_character_sheet.EditableCircularProfileImage.ProfileImage&gt;, Swift.Error&gt;) -&gt; () in dnd_character_sheet.EditableCircularProfileImage.loadTransferable(from: _PhotosUI_SwiftUI.PhotosPickerItem) -&gt; __C.NSProgress"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "1748">
+               </Location>
+               <Location
+                  uuid = "51205D40-E591-4659-AB9C-A478123D3320 - 720ebc08c515c654"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;dnd_character_sheet.EditableCircularProfileImage.ProfileImage&gt;, Swift.Error&gt;) -&gt; () in dnd_character_sheet.EditableCircularProfileImage.loadTransferable(from: _PhotosUI_SwiftUI.PhotosPickerItem) -&gt; __C.NSProgress"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "1844">
+               </Location>
+               <Location
+                  uuid = "51205D40-E591-4659-AB9C-A478123D3320 - 720ebc08c515c654"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;dnd_character_sheet.EditableCircularProfileImage.ProfileImage&gt;, Swift.Error&gt;) -&gt; () in dnd_character_sheet.EditableCircularProfileImage.loadTransferable(from: _PhotosUI_SwiftUI.PhotosPickerItem) -&gt; __C.NSProgress"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "147"
+                  endingLineNumber = "147"
+                  offsetFromSymbolStart = "1916">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BD5C82C-3512-402A-A238-DEFBDBCCEC4E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Views/UI/ProfileImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
+            landmarkName = "loadTransferable(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0BD5C82C-3512-402A-A238-DEFBDBCCEC4E - 720ebc08c515c696"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;dnd_character_sheet.EditableCircularProfileImage.ProfileImage&gt;, Swift.Error&gt;) -&gt; () in dnd_character_sheet.EditableCircularProfileImage.loadTransferable(from: _PhotosUI_SwiftUI.PhotosPickerItem) -&gt; __C.NSProgress"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "2196">
+               </Location>
+               <Location
+                  uuid = "0BD5C82C-3512-402A-A238-DEFBDBCCEC4E - 720ebc08c515c696"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;dnd_character_sheet.EditableCircularProfileImage.ProfileImage&gt;, Swift.Error&gt;) -&gt; () in dnd_character_sheet.EditableCircularProfileImage.loadTransferable(from: _PhotosUI_SwiftUI.PhotosPickerItem) -&gt; __C.NSProgress"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "2292">
+               </Location>
+               <Location
+                  uuid = "0BD5C82C-3512-402A-A238-DEFBDBCCEC4E - 720ebc08c515c696"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;dnd_character_sheet.EditableCircularProfileImage.ProfileImage&gt;, Swift.Error&gt;) -&gt; () in dnd_character_sheet.EditableCircularProfileImage.loadTransferable(from: _PhotosUI_SwiftUI.PhotosPickerItem) -&gt; __C.NSProgress"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "149"
+                  endingLineNumber = "149"
+                  offsetFromSymbolStart = "2364">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "966BF609-E64F-4051-A64E-C365E3AA831F"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Views/UI/ProfileImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
+            landmarkName = "loadTransferable(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "966BF609-E64F-4051-A64E-C365E3AA831F - 720ebc08c515c6b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;dnd_character_sheet.EditableCircularProfileImage.ProfileImage&gt;, Swift.Error&gt;) -&gt; () in dnd_character_sheet.EditableCircularProfileImage.loadTransferable(from: _PhotosUI_SwiftUI.PhotosPickerItem) -&gt; __C.NSProgress"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "2860">
+               </Location>
+               <Location
+                  uuid = "966BF609-E64F-4051-A64E-C365E3AA831F - 720ebc08c515c6b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;dnd_character_sheet.EditableCircularProfileImage.ProfileImage&gt;, Swift.Error&gt;) -&gt; () in dnd_character_sheet.EditableCircularProfileImage.loadTransferable(from: _PhotosUI_SwiftUI.PhotosPickerItem) -&gt; __C.NSProgress"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "2956">
+               </Location>
+               <Location
+                  uuid = "966BF609-E64F-4051-A64E-C365E3AA831F - 720ebc08c515c6b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;dnd_character_sheet.EditableCircularProfileImage.ProfileImage&gt;, Swift.Error&gt;) -&gt; () in dnd_character_sheet.EditableCircularProfileImage.loadTransferable(from: _PhotosUI_SwiftUI.PhotosPickerItem) -&gt; __C.NSProgress"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "150"
+                  endingLineNumber = "150"
+                  offsetFromSymbolStart = "3028">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4604893-90A4-4BDF-BA2E-14DA13A2A7C6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Views/UI/ProfileImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
+            landmarkName = "init(imagePath:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "62662F75-F67B-44D9-BD2A-8467D19FB838"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Views/CreateCharacter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "62662F75-F67B-44D9-BD2A-8467D19FB838 - c0146836881a54a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, dnd_character_sheet.LabelTextField, dnd_character_sheet.EditableCircularProfileImage, SwiftUI.Spacer)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ToolbarContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in dnd_character_sheet.CreateCharacter.body.getter : some"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/CreateCharacter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "2436">
+               </Location>
+               <Location
+                  uuid = "62662F75-F67B-44D9-BD2A-8467D19FB838 - 346e9e23edb3e3b4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Optional&lt;Swift.String&gt;) -&gt; () in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, dnd_character_sheet.LabelTextField, dnd_character_sheet.EditableCircularProfileImage, SwiftUI.Spacer)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ToolbarContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in dnd_character_sheet.CreateCharacter.body.getter : some"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/CreateCharacter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "336">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E0C2219-3B49-4D50-9A21-4B9DD8EC84D1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Views/UI/ProfileImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "imageByPath()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7E0C2219-3B49-4D50-9A21-4B9DD8EC84D1 - a2cddf3727810ef6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dnd_character_sheet.EditableCircularProfileImage.imageByPath() -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "268">
+               </Location>
+               <Location
+                  uuid = "7E0C2219-3B49-4D50-9A21-4B9DD8EC84D1 - a2cddf3727810ef6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dnd_character_sheet.EditableCircularProfileImage.imageByPath() -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "264">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "68F1FC49-0E45-4BCF-9D44-AA08CFE04490"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Views/UI/ProfileImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "imageByPath()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "68F1FC49-0E45-4BCF-9D44-AA08CFE04490 - a2cddf3727810f7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dnd_character_sheet.EditableCircularProfileImage.imageByPath() -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "404">
+               </Location>
+               <Location
+                  uuid = "68F1FC49-0E45-4BCF-9D44-AA08CFE04490 - a2cddf3727810f7a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "dnd_character_sheet.EditableCircularProfileImage.imageByPath() -&gt; Swift.Optional&lt;__C.UIImage&gt;"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "400">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3DED5A49-94F4-4CA3-A14E-9AD3C33E902B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Views/UI/ProfileImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
+            landmarkName = "imageByPath()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E1D79009-8F84-45CF-BCC8-343A5D789AC5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Views/UI/ProfileImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "imageByPath()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C1A6468-3754-4D95-9B49-5276C52DF6CE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Views/UI/ProfileImage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
+            landmarkName = "loadTransferable(from:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7C1A6468-3754-4D95-9B49-5276C52DF6CE - 720ebc08c515c02a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;dnd_character_sheet.EditableCircularProfileImage.ProfileImage&gt;, Swift.Error&gt;) -&gt; () in dnd_character_sheet.EditableCircularProfileImage.loadTransferable(from: _PhotosUI_SwiftUI.PhotosPickerItem) -&gt; __C.NSProgress"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "161"
+                  endingLineNumber = "161"
+                  offsetFromSymbolStart = "4224">
+               </Location>
+               <Location
+                  uuid = "7C1A6468-3754-4D95-9B49-5276C52DF6CE - 720ebc08c515c009"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;dnd_character_sheet.EditableCircularProfileImage.ProfileImage&gt;, Swift.Error&gt;) -&gt; () in dnd_character_sheet.EditableCircularProfileImage.loadTransferable(from: _PhotosUI_SwiftUI.PhotosPickerItem) -&gt; __C.NSProgress"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "4788">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FC1D6F5A-5701-43CE-A718-C63D36ABB09D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "dnd-character-sheet/Views/CreateCharacter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "FC1D6F5A-5701-43CE-A718-C63D36ABB09D - 950c584e1bfda90b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #2 () -&gt; SwiftUI.Button&lt;SwiftUI.Text&gt; in closure #2 () -&gt; &lt;&lt;opaque return type of static SwiftUI.ToolbarContentBuilder.buildBlock&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: SwiftUI.ToolbarContent, &#x3c4;_0_1: SwiftUI.ToolbarContent&gt;(&#x3c4;_0_0, &#x3c4;_0_1) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ToolbarContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in dnd_character_sheet.CreateCharacter.body.getter : some"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/CreateCharacter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "FC1D6F5A-5701-43CE-A718-C63D36ABB09D - d8939f9dc3f861b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #2 () -&gt; SwiftUI.Button&lt;SwiftUI.Text&gt; in closure #2 () -&gt; &lt;&lt;opaque return type of static SwiftUI.ToolbarContentBuilder.buildBlock&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: SwiftUI.ToolbarContent, &#x3c4;_0_1: SwiftUI.ToolbarContent&gt;(&#x3c4;_0_0, &#x3c4;_0_1) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ToolbarContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in dnd_character_sheet.CreateCharacter.body.getter : some"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/CreateCharacter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  uuid = "FC1D6F5A-5701-43CE-A718-C63D36ABB09D - a70a592e1da4c5fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for closure #1 @Sendable () async -&gt; () in closure #1 () -&gt; () in closure #2 () -&gt; SwiftUI.Button&lt;SwiftUI.Text&gt; in closure #2 () -&gt; &lt;&lt;opaque return type of static SwiftUI.ToolbarContentBuilder.buildBlock&lt;&#x3c4;_0_0, &#x3c4;_0_1 where &#x3c4;_0_0: SwiftUI.ToolbarContent, &#x3c4;_0_1: SwiftUI.ToolbarContent&gt;(&#x3c4;_0_0, &#x3c4;_0_1) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.toolbar&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.ToolbarContent&gt;(content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0 in dnd_character_sheet.CreateCharacter.body.getter : some"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/CreateCharacter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
