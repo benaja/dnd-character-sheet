@@ -11,6 +11,16 @@ import CoreTransferable
 import ObjectMapper
 import SwiftData
 
+enum Dice: String, CaseIterable, Codable, Identifiable {
+    case D4
+    case D6
+    case D8
+    case D10
+    case D12
+    case D20
+    
+    var id: Self { self }
+}
 
 @Model
 class DndCharacter: Identifiable, ObservableObject {
@@ -19,6 +29,7 @@ class DndCharacter: Identifiable, ObservableObject {
     var race: String = ""
     var dndClass: String = ""
     var level: String = ""
+    var totalLevel: Int = 1
     var profileImagePath: String? = nil
 //    var profileImage: UIImage?
     
@@ -26,6 +37,7 @@ class DndCharacter: Identifiable, ObservableObject {
     var maxHp: Int = 22;
     var hidDice: String = "1w8"
     var ac: String = "18"
+    var acModifier: String = ""
     
     var str = Stat()
     var dex = Stat()
@@ -58,13 +70,15 @@ class DndCharacter: Identifiable, ObservableObject {
     var stealth = Skill()
     var survical = Skill()
     
+    var hitDice: Dice
+    var remainingHitDice = 0
     
     
     var createdAt: Date = Date()
     var updatedAt: Date = Date()
     
     
-    init(id: UUID = UUID(), name: String, race: String, dndClass: String, level: String = "1", createdAt: Date = Date(), updatedAt: Date = Date()) {
+    init(id: UUID = UUID(), name: String, race: String, dndClass: String, level: String = "1", createdAt: Date = Date(), updatedAt: Date = Date(), totalLevel: Int = 1) {
         self.id = id
         self.name = name
         self.race = race
@@ -72,8 +86,11 @@ class DndCharacter: Identifiable, ObservableObject {
         self.level = level
         self.createdAt = createdAt
         self.updatedAt = updatedAt
+        self.totalLevel = totalLevel
         
         self.profileImagePath = nil
+        self.remainingHitDice = totalLevel
+        self.hitDice = Dice.D8
 //        str = Stat()
 //        dex = Stat()
 //        con = Stat()
@@ -170,9 +187,9 @@ class DndCharacter: Identifiable, ObservableObject {
 
 extension DndCharacter {
     static let sampleData: [DndCharacter] = [
-        DndCharacter(name: "Val", race: "Elf", dndClass: "Barbarien", level: "1"),
-        DndCharacter(name: "Milo", race: "Halfling", dndClass: "Fihter", level: "3"),
-        DndCharacter(name: "Halgur", race: "Orc", dndClass: "Wizard", level: "8"),
+        DndCharacter(name: "Val", race: "Elf", dndClass: "Barbarien", level: "1", totalLevel: 1),
+        DndCharacter(name: "Milo", race: "Halfling", dndClass: "Fihter", level: "3", totalLevel: 3),
+        DndCharacter(name: "Halgur", race: "Orc", dndClass: "Wizard", level: "8", totalLevel: 8),
     ]
     
     

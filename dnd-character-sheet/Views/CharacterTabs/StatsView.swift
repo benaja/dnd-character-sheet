@@ -15,37 +15,12 @@ struct StatsView: View {
     var body: some View {
         VStack  {
             HStack(spacing: 20) {
-                ZStack {
-                    Image(systemName: "shield.fill")
-                        .resizable(resizingMode: .stretch)
-                        .foregroundColor(.gray).opacity(0.3)
-                    
-                    VStack {
-                        Text("AC")
-                            .font(.caption)
-//                        AutoSavingTextField("AC", text: $character.ac)
-//                            .multilineTextAlignment(.center)
-                    }
-                    
-                }.frame(width: 100, height: 100)
+                ACView(character: $character)
                 
                 ShowHP(character: $character)
                     .padding(0.0)
                 
-                ZStack {
-                    Image(systemName: "octagon.fill")
-                        .resizable(resizingMode: .stretch)
-                        .foregroundColor(.gray).opacity(0.3)
-                        .scaledToFit()
-                    
-                    VStack {
-                        Text("Hit Dice")
-                            .font(.caption)
-                        Text("2w8")
-                            .font(.title)
-                    }
-                    
-                }.frame(width: 100, height: 100)
+                HitDiceView(character: $character)
             }
         }
     }

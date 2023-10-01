@@ -23,7 +23,11 @@ struct CreateCharacter: View {
                     .padding(.bottom)
                 LabelTextField("Class", value: $character.dndClass, placeholder: "Elf")
                     .padding(.bottom)
-                LabelTextField("Level", value: $character.level, placeholder: "Elf")
+                LabelTextField("Level", value: Binding(
+                    get: { String(character.totalLevel)},
+                    set: { character.totalLevel = Int($0) ?? 0}
+                ), placeholder: "Elf")
+                .keyboardType(.numberPad)
                 
                 EditableCircularProfileImage(imagePath: Binding(get: {character.profileImagePath}, set: {
                     print($0 ?? "")

@@ -72,17 +72,7 @@ struct EditHP: View {
                             placeholder: "",
                             alignment: .center,
                             textFont: .title
-                        ).keyboardType(.numberPad)
-//                        Text("Max HP")
-//                        .font(.caption)
-//                        TextField("", text: Binding(
-//                            get: { maxHp != nil ? "\(maxHp!)" : ""},
-//                            set: { maxHp = Int($0) ?? nil})
-//                        )
-//                        .font(.title)
-//                        .multilineTextAlignment(.center)
-//                        .keyboardType(.numberPad)
-                        
+                        ).keyboardType(.numberPad)                        
                     }
                     .frame(minWidth: 0, maxWidth: .infinity)
                     
@@ -109,7 +99,6 @@ struct EditHP: View {
                         applyChanges()
                     }
                 }
-                
             }
             .padding()
             .navigationTitle("HP Management")

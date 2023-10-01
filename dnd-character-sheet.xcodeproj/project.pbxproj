@@ -32,6 +32,9 @@
 		25D0DA212AC356F400ED2EF9 /* LabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0DA202AC356F400ED2EF9 /* LabelTextField.swift */; };
 		25D0DA232AC3659000ED2EF9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0DA222AC3659000ED2EF9 /* ImagePicker.swift */; };
 		25D0DA252AC366EB00ED2EF9 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0DA242AC366EB00ED2EF9 /* ProfileImage.swift */; };
+		25EFEFD02AC9946C0044454A /* ACView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFEFCF2AC9946C0044454A /* ACView.swift */; };
+		25EFEFD22AC99D0B0044454A /* HitDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFEFD12AC99D0B0044454A /* HitDiceView.swift */; };
+		25EFEFD52AC99E100044454A /* EditSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFEFD42AC99E100044454A /* EditSheet.swift */; };
 		25FF2C642AC977F7002F323E /* ShowHP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF2C632AC977F7002F323E /* ShowHP.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +84,9 @@
 		25D0DA202AC356F400ED2EF9 /* LabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextField.swift; sourceTree = "<group>"; };
 		25D0DA222AC3659000ED2EF9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		25D0DA242AC366EB00ED2EF9 /* ProfileImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		25EFEFCF2AC9946C0044454A /* ACView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACView.swift; sourceTree = "<group>"; };
+		25EFEFD12AC99D0B0044454A /* HitDiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitDiceView.swift; sourceTree = "<group>"; };
+		25EFEFD42AC99E100044454A /* EditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSheet.swift; sourceTree = "<group>"; };
 		25FF2C632AC977F7002F323E /* ShowHP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +129,8 @@
 			children = (
 				253EAB262AC83B3500405111 /* EditHP.swift */,
 				25FF2C632AC977F7002F323E /* ShowHP.swift */,
+				25EFEFCF2AC9946C0044454A /* ACView.swift */,
+				25EFEFD12AC99D0B0044454A /* HitDiceView.swift */,
 			);
 			path = StatsView;
 			sourceTree = "<group>";
@@ -229,6 +237,7 @@
 				25D0DA222AC3659000ED2EF9 /* ImagePicker.swift */,
 				253EAB202AC833DE00405111 /* AutoSavingTextField.swift */,
 				253EAB282AC844F100405111 /* NumberField.swift */,
+				25EFEFD42AC99E100044454A /* EditSheet.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -372,11 +381,13 @@
 				257EB9BC2AC6CB3800A2BFE5 /* GeneralCharacterInfo.swift in Sources */,
 				25D0DA1C2AC3092900ED2EF9 /* DndCharacter.swift in Sources */,
 				25D0DA252AC366EB00ED2EF9 /* ProfileImage.swift in Sources */,
+				25EFEFD22AC99D0B0044454A /* HitDiceView.swift in Sources */,
 				257EB9BE2AC6CC7600A2BFE5 /* InventoryView.swift in Sources */,
 				257EB9C42AC6CCB200A2BFE5 /* StatsView.swift in Sources */,
 				257DFD442AC44AA100DBF07C /* CharacterView.swift in Sources */,
 				25D0D9EF2AC3072300ED2EF9 /* ContentView.swift in Sources */,
 				253EAB242AC8390A00405111 /* PreviewSampleData.swift in Sources */,
+				25EFEFD52AC99E100044454A /* EditSheet.swift in Sources */,
 				25D0DA212AC356F400ED2EF9 /* LabelTextField.swift in Sources */,
 				253EAB292AC844F100405111 /* NumberField.swift in Sources */,
 				257DFD422AC4195600DBF07C /* CharacterStore.swift in Sources */,
@@ -389,6 +400,7 @@
 				25D0DA192AC308EF00ED2EF9 /* CharactersOverview.swift in Sources */,
 				253EAB212AC833DE00405111 /* AutoSavingTextField.swift in Sources */,
 				25D0DA1E2AC30F1400ED2EF9 /* CreateCharacter.swift in Sources */,
+				25EFEFD02AC9946C0044454A /* ACView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
