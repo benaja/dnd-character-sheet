@@ -46,7 +46,7 @@ class DndCharacter: Identifiable, ObservableObject {
     var wis = Stat()
     var cha = Stat()
     
-    var speed: Double = 30
+    var speed: String = "30"
     var initiativeBonus: Int = 0
     var passivePerceptionBonus: Int = 0;
     var profBonus: Int = 2;

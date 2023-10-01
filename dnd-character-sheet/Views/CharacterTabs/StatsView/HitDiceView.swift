@@ -17,9 +17,17 @@ struct HitDiceView: View {
     
     
     var body: some View {
-        Button(action: {
-            showSheet = true
-        }) {
+        EditSheet(showSheet: $showSheet, applyChanges: {
+            character.hitDice = dice
+            character.remainingHitDice = remainingHitDice
+            do {
+                try context.save()
+                showSheet = false
+            } catch {
+                fatalError(error.localizedDescription)
+            }
+        }, presentationDetents: [.height(300)],
+          button: {
             ZStack {
                 Image(systemName: "octagon.fill")
                     .resizable(resizingMode: .stretch)
@@ -34,44 +42,32 @@ struct HitDiceView: View {
                 }
                 
             }.frame(width: 100, height: 100)
-        }
-        .foregroundColor(.primary)
-        .sheet(isPresented: $showSheet) {
-            EditSheet(showSheet: $showSheet, applyChanges: {
-                character.hitDice = dice
-                character.remainingHitDice = remainingHitDice
-                do {
-                    try context.save()
-                    showSheet = false
-                } catch {
-                    fatalError(error.localizedDescription)
-                }
-            }) {
-                VStack {
-                    HStack {
-                        Text("Total Hit dice: \(character.totalLevel)")
-                        
-                        Picker("Dice", selection: $dice) {
-                            ForEach(Dice.allCases) { dice in
-                                Text(dice.rawValue).tag(dice)
-                            }
-                        }.pickerStyle(.menu)
-                    }.padding(.bottom, 50.0)
+        }) {
+            VStack {
+                HStack {
+                    Text("Total Hit dice: \(character.totalLevel)")
                     
-                    Text("Remaining Hit Dice")
-                    NumberField("", value: Binding(
-                        get: { remainingHitDice },
-                        set: { remainingHitDice = $0 ?? 0 }
-                    ), min: 0, max: character.totalLevel)
-
-                }.navigationTitle("Hit Dice")
-                    .onAppear() {
-                        remainingHitDice = character.remainingHitDice
-                        dice = character.hitDice
-                    }
+                    Picker("Dice", selection: $dice) {
+                        ForEach(Dice.allCases) { dice in
+                            Text(dice.rawValue).tag(dice)
+                        }
+                    }.pickerStyle(.menu)
+                }.padding(.bottom, 50.0)
+                
+                Text("Remaining Hit Dice")
+                NumberField("", value: Binding(
+                    get: { remainingHitDice },
+                    set: { remainingHitDice = $0 ?? 0 }
+                ), min: 0, max: character.totalLevel)
+                
             }
-            .presentationDetents([.height(300)])
+            .navigationTitle("Hit Dice")
+            .onAppear() {
+                remainingHitDice = character.remainingHitDice
+                dice = character.hitDice
+            }
         }
+        .presentationDetents([.height(300)])
     }
 }
 

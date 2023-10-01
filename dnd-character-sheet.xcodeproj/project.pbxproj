@@ -35,6 +35,8 @@
 		25EFEFD02AC9946C0044454A /* ACView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFEFCF2AC9946C0044454A /* ACView.swift */; };
 		25EFEFD22AC99D0B0044454A /* HitDiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFEFD12AC99D0B0044454A /* HitDiceView.swift */; };
 		25EFEFD52AC99E100044454A /* EditSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFEFD42AC99E100044454A /* EditSheet.swift */; };
+		25EFEFD82AC9B1C40044454A /* MainStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25EFEFD72AC9B1C40044454A /* MainStats.swift */; };
+		25FB8E052AC9BA0900C62439 /* EditInitiative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB8E042AC9BA0900C62439 /* EditInitiative.swift */; };
 		25FF2C642AC977F7002F323E /* ShowHP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF2C632AC977F7002F323E /* ShowHP.swift */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +89,8 @@
 		25EFEFCF2AC9946C0044454A /* ACView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACView.swift; sourceTree = "<group>"; };
 		25EFEFD12AC99D0B0044454A /* HitDiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitDiceView.swift; sourceTree = "<group>"; };
 		25EFEFD42AC99E100044454A /* EditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSheet.swift; sourceTree = "<group>"; };
+		25EFEFD72AC9B1C40044454A /* MainStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStats.swift; sourceTree = "<group>"; };
+		25FB8E042AC9BA0900C62439 /* EditInitiative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInitiative.swift; sourceTree = "<group>"; };
 		25FF2C632AC977F7002F323E /* ShowHP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,6 +135,7 @@
 				25FF2C632AC977F7002F323E /* ShowHP.swift */,
 				25EFEFCF2AC9946C0044454A /* ACView.swift */,
 				25EFEFD12AC99D0B0044454A /* HitDiceView.swift */,
+				25FB8E042AC9BA0900C62439 /* EditInitiative.swift */,
 			);
 			path = StatsView;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 				257EB9BF2AC6CC8200A2BFE5 /* CombatView.swift */,
 				257EB9C12AC6CC9300A2BFE5 /* Spellsview.swift */,
 				257EB9C32AC6CCB200A2BFE5 /* StatsView.swift */,
+				25EFEFD72AC9B1C40044454A /* MainStats.swift */,
 			);
 			path = CharacterTabs;
 			sourceTree = "<group>";
@@ -378,12 +384,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25FB8E052AC9BA0900C62439 /* EditInitiative.swift in Sources */,
 				257EB9BC2AC6CB3800A2BFE5 /* GeneralCharacterInfo.swift in Sources */,
 				25D0DA1C2AC3092900ED2EF9 /* DndCharacter.swift in Sources */,
 				25D0DA252AC366EB00ED2EF9 /* ProfileImage.swift in Sources */,
 				25EFEFD22AC99D0B0044454A /* HitDiceView.swift in Sources */,
 				257EB9BE2AC6CC7600A2BFE5 /* InventoryView.swift in Sources */,
 				257EB9C42AC6CCB200A2BFE5 /* StatsView.swift in Sources */,
+				25EFEFD82AC9B1C40044454A /* MainStats.swift in Sources */,
 				257DFD442AC44AA100DBF07C /* CharacterView.swift in Sources */,
 				25D0D9EF2AC3072300ED2EF9 /* ContentView.swift in Sources */,
 				253EAB242AC8390A00405111 /* PreviewSampleData.swift in Sources */,

@@ -8,12 +8,17 @@
 import Foundation
 import SwiftData
 
-let previewContainer: ModelContainer = {
-    do {
-        let container = try ModelContainer(for: DndCharacter.self, configurations: ModelConfiguration(isStoredInMemoryOnly: true))
-        
-        return container
-    } catch {
-        fatalError("Failend to load preview container")
-    }
-}()
+func previewContainer() -> ModelContainer {
+    let config = ModelConfiguration(isStoredInMemoryOnly: true)
+    let container = try! ModelContainer(for: DndCharacter.self, configurations: config)
+    
+    return container
+
+    
+//    do {
+//            } catch {
+//        fatalError("Failend to load preview container")
+//    }
+}
+
+

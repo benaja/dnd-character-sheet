@@ -7,53 +7,70 @@
 
 import SwiftUI
 
-struct EditSheet<Content: View>: View {
+struct EditSheet<ButtonContent: View, Content: View>: View {
     @Binding var showSheet: Bool
     var applyChanges: () -> Void
+    var presentationDetents: Set<PresentationDetent>?
+    @ViewBuilder let button: ButtonContent
     @ViewBuilder let content: Content
     
-//    init(showSheet: Binding<Bool>, applyChanges: @escaping () -> Void, content: @escaping () -> some View) {
-//        self._showSheet = showSheet
-//        self.applyChanges = applyChanges
-//        self.content = content
-//    }
+    
+    //    init(showSheet: Binding<Bool>, applyChanges: @escaping () -> Void,
+    //         @ViewBuilder button: @escaping () -> Content,
+    //         @ViewBuilder content: @escaping () -> Content) {
+    //        self._showSheet = showSheet
+    //        self.applyChanges = applyChanges
+    //        self.button = button()
+    //        self.content = content()
+    //    }
+    
+    //    init(showSheet: Binding<Bool>, applyChanges: @escaping () -> Void, content: @escaping () -> some View) {
+    //        self._showSheet = showSheet
+    //        self.applyChanges = applyChanges
+    //        self.content = content
+    //    }
     
     var body: some View {
-        NavigationStack{
-            content
-                .navigationBarTitleDisplayMode(.inline)
-                .padding()
-                .toolbar() {
-                    ToolbarItem(placement: .cancellationAction) {
-                        Button("Cancel") {
-                            showSheet = false
+        Button(action: {
+            showSheet = true
+        }) {
+            button
+        }.foregroundColor(.primary)
+            .sheet(isPresented: $showSheet) {
+                NavigationStack{
+                    content
+                        .navigationBarTitleDisplayMode(.inline)
+                        .padding()
+                        .toolbar() {
+                            ToolbarItem(placement: .cancellationAction) {
+                                Button("Cancel") {
+                                    showSheet = false
+                                }
+                            }
+                            ToolbarItem(placement: .confirmationAction) {
+                                Button("Apply") {
+                                    applyChanges()
+                                }
+                            }
                         }
-                    }
-                    ToolbarItem(placement: .confirmationAction) {
-                        Button("Apply") {
-                            applyChanges()
-                        }
-                    }
                 }
-        }
-            
+                .presentationDetents(presentationDetents ?? [])
+            }
     }
 }
+
 
 #Preview {
     @State var showSheet = false
     
     return NavigationStack {
         VStack {
-            Button(action: {
-                showSheet = true
+            
+            EditSheet(showSheet: $showSheet, applyChanges: { print("applc changes")}, button: {
+                Text("Button")
             }) {
-                Text("ShowSheet")
-            }.sheet(isPresented: $showSheet) {
-                EditSheet(showSheet: $showSheet, applyChanges: { print("applc changes")}) {
-                    Text("Content")
-                }.navigationTitle("Test")
-            }
+                Text("Content")
+            }.navigationTitle("Test")
         }
     }
 }
