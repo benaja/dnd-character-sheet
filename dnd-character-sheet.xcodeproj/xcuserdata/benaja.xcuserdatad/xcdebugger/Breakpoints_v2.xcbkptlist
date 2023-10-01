@@ -1272,6 +1272,21 @@
                   endingLineNumber = "160"
                   offsetFromSymbolStart = "4788">
                </Location>
+               <Location
+                  uuid = "7C1A6468-3754-4D95-9B49-5276C52DF6CE - 720ebc08c515c009"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Optional&lt;dnd_character_sheet.EditableCircularProfileImage.ProfileImage&gt;, Swift.Error&gt;) -&gt; () in dnd_character_sheet.EditableCircularProfileImage.loadTransferable(from: _PhotosUI_SwiftUI.PhotosPickerItem) -&gt; __C.NSProgress"
+                  moduleName = "dnd-character-sheet"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/benaja/dev/dnd-character-sheet/dnd-character-sheet/Views/UI/ProfileImage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "5220">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>

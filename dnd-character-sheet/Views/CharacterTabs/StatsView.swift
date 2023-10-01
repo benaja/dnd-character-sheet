@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct StatsView: View {
     @Binding var character: DndCharacter
+    @Environment(\.modelContext) private var context
     
     var body: some View {
         VStack  {
@@ -21,43 +23,14 @@ struct StatsView: View {
                     VStack {
                         Text("AC")
                             .font(.caption)
-                        
-                        TextField("AC", text: $character.ac)
-                            .font(.title)
-                        .multilineTextAlignment(.center)
+//                        AutoSavingTextField("AC", text: $character.ac)
+//                            .multilineTextAlignment(.center)
                     }
                     
                 }.frame(width: 100, height: 100)
                 
-                VStack {
-                    ZStack {
-                        Rectangle()
-                            .fill(.gray)
-                            .opacity(0.3)
-                            .frame(width: 100, height: 60)
-                        
-                        VStack {
-                            Text("HP")
-                                .font(.caption)
-                            Text("12")
-                                .font(.title)
-                        }
-                    }
-                    ZStack {
-                        Rectangle()
-                            .fill(.gray)
-                            .opacity(0.3)
-                            .frame(width: 100, height: 30)
-                        
-                        HStack {
-                            Text("Max HP")
-                                .font(.caption)
-                            Text("21")
-                                .font(.subheadline)
-                        }
-                    }
-                }
-                .padding(0.0)
+                ShowHP(character: $character)
+                    .padding(0.0)
                 
                 ZStack {
                     Image(systemName: "octagon.fill")
@@ -80,5 +53,12 @@ struct StatsView: View {
 }
 
 #Preview {
-    StatsView(character: .constant(DndCharacter.sampleData[0]))
+    let config = ModelConfiguration(isStoredInMemoryOnly: true)
+    let container = try! ModelContainer(for: DndCharacter.self, configurations: config)
+
+    
+    return StatsView(character: .constant(DndCharacter.sampleData[0]))
+        .modelContainer(container)
+
+    
 }

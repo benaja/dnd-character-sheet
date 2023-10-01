@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253EAB212AC833DE00405111 /* AutoSavingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253EAB202AC833DE00405111 /* AutoSavingTextField.swift */; };
+		253EAB242AC8390A00405111 /* PreviewSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253EAB232AC8390900405111 /* PreviewSampleData.swift */; };
+		253EAB272AC83B3500405111 /* EditHP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253EAB262AC83B3500405111 /* EditHP.swift */; };
+		253EAB292AC844F100405111 /* NumberField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253EAB282AC844F100405111 /* NumberField.swift */; };
 		257DFD422AC4195600DBF07C /* CharacterStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DFD412AC4195600DBF07C /* CharacterStore.swift */; };
 		257DFD442AC44AA100DBF07C /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257DFD432AC44AA100DBF07C /* CharacterView.swift */; };
 		257EB9BC2AC6CB3800A2BFE5 /* GeneralCharacterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257EB9BB2AC6CB3800A2BFE5 /* GeneralCharacterInfo.swift */; };
@@ -28,6 +32,7 @@
 		25D0DA212AC356F400ED2EF9 /* LabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0DA202AC356F400ED2EF9 /* LabelTextField.swift */; };
 		25D0DA232AC3659000ED2EF9 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0DA222AC3659000ED2EF9 /* ImagePicker.swift */; };
 		25D0DA252AC366EB00ED2EF9 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D0DA242AC366EB00ED2EF9 /* ProfileImage.swift */; };
+		25FF2C642AC977F7002F323E /* ShowHP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FF2C632AC977F7002F323E /* ShowHP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		253EAB202AC833DE00405111 /* AutoSavingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSavingTextField.swift; sourceTree = "<group>"; };
+		253EAB232AC8390900405111 /* PreviewSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSampleData.swift; sourceTree = "<group>"; };
+		253EAB262AC83B3500405111 /* EditHP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHP.swift; sourceTree = "<group>"; };
+		253EAB282AC844F100405111 /* NumberField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberField.swift; sourceTree = "<group>"; };
 		257DFD412AC4195600DBF07C /* CharacterStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterStore.swift; sourceTree = "<group>"; };
 		257DFD432AC44AA100DBF07C /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 		257EB9BB2AC6CB3800A2BFE5 /* GeneralCharacterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralCharacterInfo.swift; sourceTree = "<group>"; };
@@ -72,6 +81,7 @@
 		25D0DA202AC356F400ED2EF9 /* LabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelTextField.swift; sourceTree = "<group>"; };
 		25D0DA222AC3659000ED2EF9 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		25D0DA242AC366EB00ED2EF9 /* ProfileImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImage.swift; sourceTree = "<group>"; };
+		25FF2C632AC977F7002F323E /* ShowHP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowHP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +110,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		253EAB222AC838E600405111 /* PreviewHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				253EAB232AC8390900405111 /* PreviewSampleData.swift */,
+			);
+			path = PreviewHelpers;
+			sourceTree = "<group>";
+		};
+		253EAB252AC83B1C00405111 /* StatsView */ = {
+			isa = PBXGroup;
+			children = (
+				253EAB262AC83B3500405111 /* EditHP.swift */,
+				25FF2C632AC977F7002F323E /* ShowHP.swift */,
+			);
+			path = StatsView;
+			sourceTree = "<group>";
+		};
 		257EB9BA2AC6CB2200A2BFE5 /* CharacterTabs */ = {
 			isa = PBXGroup;
 			children = (
+				253EAB252AC83B1C00405111 /* StatsView */,
 				257EB9BB2AC6CB3800A2BFE5 /* GeneralCharacterInfo.swift */,
 				257EB9BD2AC6CC7600A2BFE5 /* InventoryView.swift */,
 				257EB9BF2AC6CC8200A2BFE5 /* CombatView.swift */,
@@ -135,6 +163,7 @@
 		25D0D9EB2AC3072300ED2EF9 /* dnd-character-sheet */ = {
 			isa = PBXGroup;
 			children = (
+				253EAB222AC838E600405111 /* PreviewHelpers */,
 				25D0DA1A2AC3091500ED2EF9 /* Models */,
 				25D0DA172AC308E000ED2EF9 /* Views */,
 				25D0D9EC2AC3072300ED2EF9 /* dnd_character_sheetApp.swift */,
@@ -198,6 +227,8 @@
 				25D0DA242AC366EB00ED2EF9 /* ProfileImage.swift */,
 				25D0DA202AC356F400ED2EF9 /* LabelTextField.swift */,
 				25D0DA222AC3659000ED2EF9 /* ImagePicker.swift */,
+				253EAB202AC833DE00405111 /* AutoSavingTextField.swift */,
+				253EAB282AC844F100405111 /* NumberField.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -345,13 +376,18 @@
 				257EB9C42AC6CCB200A2BFE5 /* StatsView.swift in Sources */,
 				257DFD442AC44AA100DBF07C /* CharacterView.swift in Sources */,
 				25D0D9EF2AC3072300ED2EF9 /* ContentView.swift in Sources */,
+				253EAB242AC8390A00405111 /* PreviewSampleData.swift in Sources */,
 				25D0DA212AC356F400ED2EF9 /* LabelTextField.swift in Sources */,
+				253EAB292AC844F100405111 /* NumberField.swift in Sources */,
 				257DFD422AC4195600DBF07C /* CharacterStore.swift in Sources */,
 				25D0DA232AC3659000ED2EF9 /* ImagePicker.swift in Sources */,
+				253EAB272AC83B3500405111 /* EditHP.swift in Sources */,
 				25D0D9ED2AC3072300ED2EF9 /* dnd_character_sheetApp.swift in Sources */,
 				257EB9C22AC6CC9300A2BFE5 /* Spellsview.swift in Sources */,
 				257EB9C02AC6CC8200A2BFE5 /* CombatView.swift in Sources */,
+				25FF2C642AC977F7002F323E /* ShowHP.swift in Sources */,
 				25D0DA192AC308EF00ED2EF9 /* CharactersOverview.swift in Sources */,
+				253EAB212AC833DE00405111 /* AutoSavingTextField.swift in Sources */,
 				25D0DA1E2AC30F1400ED2EF9 /* CreateCharacter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

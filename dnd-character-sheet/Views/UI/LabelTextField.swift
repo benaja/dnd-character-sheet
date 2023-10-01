@@ -10,29 +10,38 @@ import SwiftUI
 struct LabelTextField: View {
     let placeholder: String
     let label: String?
-    let keyboardType: UIKeyboardType
     @Binding var value: String
+    @FocusState var isFocused: Bool
     
+    let alignment: HorizontalAlignment
+    let textFont: Font
     
     var body: some View {
-        VStack (alignment: .leading) {
+        VStack (alignment: alignment, spacing: 0) {
             if (label != nil) {
                 Text(label!)
                     .font(.caption)
             }
             TextField(placeholder, text: $value)
-                .keyboardType(keyboardType)
+                .focused($isFocused)
+                .font(textFont)
+                .multilineTextAlignment(alignment == .leading ? .leading : .center)
+        }.onTapGesture {
+            isFocused = true
         }
     }
     
     init(_ label: String?, 
          value: Binding<String>,
          placeholder: String = "Enter text...",
-         keyboardType: UIKeyboardType = UIKeyboardType.default) {
+         alignment: HorizontalAlignment = .leading,
+         textFont: Font = .body
+    ) {
         self.label = label
         self._value = value
         self.placeholder = placeholder
-        self.keyboardType = keyboardType
+        self.alignment = alignment
+        self.textFont = textFont
     }
 }
 
