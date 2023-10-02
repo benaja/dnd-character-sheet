@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct EditInitiative: View {
+struct EditPassiveWis: View {
     @Binding var character: DndCharacter
     @State var showSheet = false
-    @State var initiativeBonus = 0
+    @State var passiveWisBonus: Int? = 0
     @Environment(\.modelContext) private var context
     
-    var initiative: String {
-        stringModifier(character.dex.bonus + character.initiativeBonus)
+    var formattedPasiveWis: String {
+        String(10 + character.wis.modifier + character.passivePerceptionBonus)
     }
     
-    var currentInitiative: String {
-        stringModifier(character.dex.modifier + initiativeBonus)
+    var currentFormattedPassiveWis: String {
+        String(10 + character.wis.modifier + (passiveWisBonus ?? 0))
     }
     
     func stringModifier(_ value: Int) -> String {
@@ -34,40 +34,37 @@ struct EditInitiative: View {
             showSheet = true
         }){
             VStack {
-                Text("Initiative")
+                Text("Passive Perception")
                     .font(.caption)
-                Text(initiative)
+                Text(formattedPasiveWis)
                     .font(.title)
             }
             
         }
-        .editSheet(isPresented: $showSheet, 
+        .editSheet(isPresented: $showSheet,
                    applyChanges: applyChanges,
                    presentationDetents: [.height(300)]
         ) {
             VStack(spacing: 0) {
-                Text("Dex mod + bonus (\(character.dex.modifier) + \(initiativeBonus))")
+                Text("10 + Wis mod + Bonus (10 + \(character.wis.modifier) + \(passiveWisBonus ?? 0))")
                     .padding(.bottom, 5)
-                Text(currentInitiative)
+                Text(currentFormattedPassiveWis)
                     .font(.title)
                     .padding(.bottom, 30)
                 
                 Text("Bonus")
-                NumberField("", value: Binding(
-                    get: {initiativeBonus},
-                    set: { initiativeBonus = $0 ?? 0 }
-                ))
+                NumberField("", value: $passiveWisBonus)
             }
             .onAppear() {
-                initiativeBonus = character.initiativeBonus
+                passiveWisBonus = character.passivePerceptionBonus
             }
-            .navigationTitle("Initiative")
+            .navigationTitle("Passive Perception")
             
         }
     }
     
     func applyChanges() {
-        character.initiativeBonus = initiativeBonus
+        character.passivePerceptionBonus = passiveWisBonus ?? 0
         do {
             try context.save()
             showSheet = false
@@ -81,6 +78,6 @@ struct EditInitiative: View {
     let container = previewContainer()
     @State var character = DndCharacter.sampleData[0]
     
-    return EditInitiative(character: $character)
+    return EditPassiveWis(character: $character)
         .modelContainer(container)
 }

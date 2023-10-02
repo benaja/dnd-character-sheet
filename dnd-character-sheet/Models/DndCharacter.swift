@@ -124,8 +124,16 @@ class DndCharacter: Identifiable, ObservableObject {
 
     struct Stat: Codable {
         var value: Int = 10
-        var modifier: Int = 0;
+        var bonus: Int = 0;
         var prof: Bool = false
+        
+        var modifier: Int {
+            if (value > 10) {
+                return 1
+            }
+            
+            return 0
+        }
       
         init() {
             

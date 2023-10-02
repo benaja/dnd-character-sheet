@@ -22,6 +22,8 @@ struct StatsView: View {
                 
                 HitDiceView(character: $character)
             }
+            
+            MainStats(character: $character)
         }
     }
     

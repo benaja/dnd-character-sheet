@@ -17,17 +17,9 @@ struct HitDiceView: View {
     
     
     var body: some View {
-        EditSheet(showSheet: $showSheet, applyChanges: {
-            character.hitDice = dice
-            character.remainingHitDice = remainingHitDice
-            do {
-                try context.save()
-                showSheet = false
-            } catch {
-                fatalError(error.localizedDescription)
-            }
-        }, presentationDetents: [.height(300)],
-          button: {
+        Button(action: {
+            showSheet = true
+        }) {
             ZStack {
                 Image(systemName: "octagon.fill")
                     .resizable(resizingMode: .stretch)
@@ -42,7 +34,10 @@ struct HitDiceView: View {
                 }
                 
             }.frame(width: 100, height: 100)
-        }) {
+        }
+        .editSheet(isPresented: $showSheet,
+                   applyChanges: applyChanges,
+                   presentationDetents: [.height(300)]) {
             VStack {
                 HStack {
                     Text("Total Hit dice: \(character.totalLevel)")
@@ -66,8 +61,20 @@ struct HitDiceView: View {
                 remainingHitDice = character.remainingHitDice
                 dice = character.hitDice
             }
+
         }
         .presentationDetents([.height(300)])
+    }
+    
+    func applyChanges() {
+        character.hitDice = dice
+        character.remainingHitDice = remainingHitDice
+        do {
+            try context.save()
+            showSheet = false
+        } catch {
+            fatalError(error.localizedDescription)
+        }
     }
 }
 

@@ -7,57 +7,57 @@
 
 import SwiftUI
 
-struct EditSheet<ButtonContent: View, Content: View>: View {
+struct EditSheet<Sheet: View>: ViewModifier {
     @Binding var showSheet: Bool
     var applyChanges: () -> Void
     var presentationDetents: Set<PresentationDetent>?
-    @ViewBuilder let button: ButtonContent
-    @ViewBuilder let content: Content
+    @ViewBuilder var sheet: Sheet
+
+
     
-    
-    //    init(showSheet: Binding<Bool>, applyChanges: @escaping () -> Void,
-    //         @ViewBuilder button: @escaping () -> Content,
-    //         @ViewBuilder content: @escaping () -> Content) {
-    //        self._showSheet = showSheet
-    //        self.applyChanges = applyChanges
-    //        self.button = button()
-    //        self.content = content()
-    //    }
-    
-    //    init(showSheet: Binding<Bool>, applyChanges: @escaping () -> Void, content: @escaping () -> some View) {
-    //        self._showSheet = showSheet
-    //        self.applyChanges = applyChanges
-    //        self.content = content
-    //    }
-    
-    var body: some View {
-        Button(action: {
-            showSheet = true
-        }) {
-            button
-        }.foregroundColor(.primary)
+    func body(content: Content)-> some View {
+        content
+            .foregroundColor(.primary)
             .sheet(isPresented: $showSheet) {
-                NavigationStack{
-                    content
-                        .navigationBarTitleDisplayMode(.inline)
-                        .padding()
-                        .toolbar() {
-                            ToolbarItem(placement: .cancellationAction) {
-                                Button("Cancel") {
-                                    showSheet = false
-                                }
-                            }
-                            ToolbarItem(placement: .confirmationAction) {
-                                Button("Apply") {
-                                    applyChanges()
-                                }
+            NavigationStack{
+                sheet
+                    .navigationBarTitleDisplayMode(.inline)
+                    .padding()
+                    .toolbar() {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Cancel") {
+                                showSheet = false
                             }
                         }
-                }
-                .presentationDetents(presentationDetents ?? [])
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Apply") {
+                                applyChanges()
+                            }
+                        }
+                    }
             }
+            .presentationDetents(presentationDetents ?? [])
+        }
     }
 }
+
+extension View {
+    func editSheet<Sheet: View>(
+        isPresented: Binding<Bool>,
+        applyChanges: @escaping () -> Void,
+        presentationDetents: Set<PresentationDetent>? = nil,
+        @ViewBuilder sheet: @escaping () -> Sheet
+        ) -> some View {
+        modifier(
+            EditSheet(
+                showSheet: isPresented,
+                applyChanges: applyChanges,
+                presentationDetents: presentationDetents,
+                sheet: sheet
+            ))
+    }
+}
+
 
 
 #Preview {
@@ -65,12 +65,16 @@ struct EditSheet<ButtonContent: View, Content: View>: View {
     
     return NavigationStack {
         VStack {
-            
-            EditSheet(showSheet: $showSheet, applyChanges: { print("applc changes")}, button: {
-                Text("Button")
+            Button (action: {
+                showSheet = true
             }) {
-                Text("Content")
-            }.navigationTitle("Test")
+                Text("Click me")
+            }.editSheet(isPresented: $showSheet, applyChanges: {
+                
+            }) {
+                Text("This is my content")
+            }
+            
         }
     }
 }
