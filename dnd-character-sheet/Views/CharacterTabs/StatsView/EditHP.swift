@@ -85,6 +85,7 @@ struct EditHP: View {
                 .pickerStyle(.segmented)
                 
                 NumberField("", value: $life, min: 0)
+                    .font(.title)
                 
                 
             }

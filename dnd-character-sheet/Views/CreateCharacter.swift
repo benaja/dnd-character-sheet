@@ -13,7 +13,6 @@ struct CreateCharacter: View {
     @Environment(\.modelContext) private var context
 //    @EnvironmentObject var store: CharacterStore
     
-    
     var body: some View {
         NavigationStack {
             VStack (alignment: .leading) {

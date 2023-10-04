@@ -14,7 +14,8 @@ struct dnd_character_sheetApp: App {
     
     var body: some Scene {
         WindowGroup {
-            CharactersOverview()
+            ExampleSubPage()
+//            CharactersOverview()
 //                .task {
 //                    do {
 //                        try await store.loadAll()

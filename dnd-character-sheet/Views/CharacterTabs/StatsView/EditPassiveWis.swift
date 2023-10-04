@@ -14,7 +14,7 @@ struct EditPassiveWis: View {
     @Environment(\.modelContext) private var context
     
     var formattedPasiveWis: String {
-        String(10 + character.wis.modifier + character.passivePerceptionBonus)
+        String(10 + character.wis.modifier + character.passivePerceptionBonus + character.perception.bonus + (character.perception.prof ? character.profBonus : 0) + (character.perception.exp ? character.profBonus * 2 : 0))
     }
     
     var currentFormattedPassiveWis: String {
@@ -34,7 +34,7 @@ struct EditPassiveWis: View {
             showSheet = true
         }){
             VStack {
-                Text("Passive Perception")
+                Text("Passive Wis")
                     .font(.caption)
                 Text(formattedPasiveWis)
                     .font(.title)
@@ -45,20 +45,21 @@ struct EditPassiveWis: View {
                    applyChanges: applyChanges,
                    presentationDetents: [.height(300)]
         ) {
-            VStack(spacing: 0) {
-                Text("10 + Wis mod + Bonus (10 + \(character.wis.modifier) + \(passiveWisBonus ?? 0))")
+            VStack(alignment: .leading, spacing: 0) {
+                Text("10 + Perception Mod + Bonus (10 + \(character.wis.modifier) + \(passiveWisBonus ?? 0))")
                     .padding(.bottom, 5)
                 Text(currentFormattedPassiveWis)
                     .font(.title)
                     .padding(.bottom, 30)
                 
                 Text("Bonus")
+                    .font(.caption)
                 NumberField("", value: $passiveWisBonus)
             }
             .onAppear() {
                 passiveWisBonus = character.passivePerceptionBonus
             }
-            .navigationTitle("Passive Perception")
+            .navigationTitle("Passive Wis (Perception)")
             
         }
     }

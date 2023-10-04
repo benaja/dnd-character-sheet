@@ -38,7 +38,7 @@ struct HitDiceView: View {
         .editSheet(isPresented: $showSheet,
                    applyChanges: applyChanges,
                    presentationDetents: [.height(300)]) {
-            VStack {
+            VStack (alignment: .leading) {
                 HStack {
                     Text("Total Hit dice: \(character.totalLevel)")
                     
@@ -50,10 +50,12 @@ struct HitDiceView: View {
                 }.padding(.bottom, 50.0)
                 
                 Text("Remaining Hit Dice")
+                    .font(.caption)
                 NumberField("", value: Binding(
                     get: { remainingHitDice },
                     set: { remainingHitDice = $0 ?? 0 }
                 ), min: 0, max: character.totalLevel)
+                .font(.title)
                 
             }
             .navigationTitle("Hit Dice")

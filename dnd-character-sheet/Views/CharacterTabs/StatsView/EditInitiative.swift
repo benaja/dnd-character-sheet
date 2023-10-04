@@ -14,7 +14,7 @@ struct EditInitiative: View {
     @Environment(\.modelContext) private var context
     
     var initiative: String {
-        stringModifier(character.dex.bonus + character.initiativeBonus)
+        stringModifier(character.dex.modifier + character.initiativeBonus)
     }
     
     var currentInitiative: String {
@@ -45,7 +45,7 @@ struct EditInitiative: View {
                    applyChanges: applyChanges,
                    presentationDetents: [.height(300)]
         ) {
-            VStack(spacing: 0) {
+            VStack(alignment: .leading, spacing: 0) {
                 Text("Dex mod + bonus (\(character.dex.modifier) + \(initiativeBonus))")
                     .padding(.bottom, 5)
                 Text(currentInitiative)
@@ -53,6 +53,7 @@ struct EditInitiative: View {
                     .padding(.bottom, 30)
                 
                 Text("Bonus")
+                    .font(.caption)
                 NumberField("", value: Binding(
                     get: {initiativeBonus},
                     set: { initiativeBonus = $0 ?? 0 }

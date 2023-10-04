@@ -12,6 +12,8 @@ struct EditSheet<Sheet: View>: ViewModifier {
     var applyChanges: () -> Void
     var presentationDetents: Set<PresentationDetent>?
     @ViewBuilder var sheet: Sheet
+    
+    @Environment(\.dismiss) var dismiss
 
 
     
@@ -26,6 +28,7 @@ struct EditSheet<Sheet: View>: ViewModifier {
                     .toolbar() {
                         ToolbarItem(placement: .cancellationAction) {
                             Button("Cancel") {
+                                dismiss()
                                 showSheet = false
                             }
                         }

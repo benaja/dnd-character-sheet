@@ -22,6 +22,32 @@ enum Dice: String, CaseIterable, Codable, Identifiable {
     var id: Self { self }
 }
 
+enum AttackType: String, CaseIterable, Codable, Identifiable {
+    case Mele
+    case Ranged
+    
+    var id: Self { self }
+}
+
+enum DamageType: String, CaseIterable, Codable, Identifiable {
+    case Slashing
+    case Percing
+    case Bludgeoning
+    case Poison
+    case Acid
+    case Fire
+    case Cold
+    case Radiant
+    case Necrotic
+    case Lightning
+    case Thunder
+    case Force
+    case Psychic
+    
+    var id: Self { self }
+}
+
+
 @Model
 class DndCharacter: Identifiable, ObservableObject {
     var id: UUID = UUID()
@@ -39,39 +65,41 @@ class DndCharacter: Identifiable, ObservableObject {
     var ac: String = "18"
     var acModifier: String = ""
     
-    var str = Stat()
-    var dex = Stat()
-    var con = Stat()
-    var int = Stat()
-    var wis = Stat()
-    var cha = Stat()
+    var str = Stat(name: "Strength")
+    var dex = Stat(name: "Dexterity")
+    var con = Stat(name: "Constitution")
+    var int = Stat(name: "Intelligence")
+    var wis = Stat(name: "Wisdom")
+    var cha = Stat(name: "Charisma")
     
     var speed: String = "30"
     var initiativeBonus: Int = 0
     var passivePerceptionBonus: Int = 0;
     var profBonus: Int = 2;
     
-    var acrobatics = Skill()
-    var animalHandling = Skill()
-    var arcana = Skill()
-    var athletics = Skill()
-    var deception = Skill()
-    var history = Skill()
-    var insight = Skill()
-    var intimidation = Skill()
-    var investigation = Skill()
-    var medicine = Skill()
-    var nature = Skill()
-    var perception = Skill()
-    var performance = Skill()
-    var persuasion = Skill()
-    var religion = Skill()
-    var sleigthOfHand = Skill()
-    var stealth = Skill()
-    var survical = Skill()
+    var acrobatics = Skill(name: "Acrobatics")
+    var animalHandling = Skill(name: "Animal Handling")
+    var arcana = Skill(name: "Arcana")
+    var athletics = Skill(name: "Athletics")
+    var deception = Skill(name: "Deception")
+    var history = Skill(name: "History")
+    var insight = Skill(name: "Insight")
+    var intimidation = Skill(name: "Intimidation")
+    var investigation = Skill(name: "Investigation")
+    var medicine = Skill(name: "Medicine")
+    var nature = Skill(name: "Nature")
+    var perception = Skill(name: "Perception")
+    var performance = Skill(name: "Performance")
+    var persuasion = Skill(name: "Persuasion")
+    var religion = Skill(name: "Religion")
+    var sleigthOfHand = Skill(name: "Sleigth Of Hand")
+    var stealth = Skill(name: "Stealth")
+    var survical = Skill(name: "Survival")
     
     var hitDice: Dice
     var remainingHitDice = 0
+    
+    var weapons: [Weapon] = []
     
     
     var createdAt: Date = Date()
@@ -91,31 +119,6 @@ class DndCharacter: Identifiable, ObservableObject {
         self.profileImagePath = nil
         self.remainingHitDice = totalLevel
         self.hitDice = Dice.D8
-//        str = Stat()
-//        dex = Stat()
-//        con = Stat()
-//        int = Stat()
-//        wis = Stat()
-//        cha = Stat()
-//        
-//        acrobatics = Skill()
-//        animalHandling = Skill()
-//        arcana = Skill()
-//        athletics = Skill()
-//        deception = Skill()
-//        history = Skill()
-//        insight = Skill()
-//        intimidation = Skill()
-//        investigation = Skill()
-//        medicine = Skill()
-//        nature = Skill()
-//        perception = Skill()
-//        performance = Skill()
-//        persuasion = Skill()
-//        religion = Skill()
-//        sleigthOfHand = Skill()
-//        stealth = Skill()
-//        survical = Skill()
     }
    
     
@@ -123,21 +126,37 @@ class DndCharacter: Identifiable, ObservableObject {
 
 
     struct Stat: Codable {
+        var name: String = ""
         var value: Int = 10
         var bonus: Int = 0;
         var prof: Bool = false
         
         var modifier: Int {
-            if (value > 10) {
-                return 1
-            }
-            
-            return 0
+            (value / 2) - 5
+        }
+        
+        func savingThrowMod(profBonus: Int) -> Int {
+            modifier + bonus + (prof ? profBonus : 0)
         }
       
-        init() {
-            
+        init(name: String) {
+            self.name = name
         }
+    }
+    
+    struct Weapon: Codable {
+        var name: String = ""
+        var proficient: Bool = false
+        var attackType: AttackType = .Mele
+        var reach: String = "5ft"
+        var range: String = "30ft/120ft"
+        var damageType: DamageType = .Slashing
+        var cost: Double = 0.0
+        var weight: Double = 0.0
+        var isMagic: Bool = false
+        
+        var hasAmo: Bool = false
+        var amo: Int = 0
     }
     
 
@@ -145,28 +164,12 @@ class DndCharacter: Identifiable, ObservableObject {
     struct Skill: Codable {
         var prof = false
         var exp = false
-        var modifier = 0
+        var bonus = 0
+        var name: String = ""
     }
         
     
-    
 
-//    
-//    
-//    init(from decoder: Decoder) throws {
-//        let values = try decoder.container(keyedBy: CodingKeys.self)
-//        id = try values.decode(UUID.self, forKey: .id)
-//        name = try values.decode(String.self, forKey: .name)
-//        race = try values.decode(String.self, forKey: .race)
-//        dndClass = try values.decodeIfPresent(String.self, forKey: .dndClass) ?? ""
-//        level = try values.decode(String.self, forKey: .level)
-//        profileImagePath = try values.decodeIfPresent(String?.self, forKey: .profileImagePath) ?? nil
-//        updatedAt = try values.decodeIfPresent(Date.self, forKey: .updatedAt) ?? Date()
-//        createdAt = try values.decodeIfPresent(Date.self, forKey: .createdAt) ?? Date()
-//        self.stats = try values.decodeIfPresent(Stats.self, forKey: .stats) ?? Stats()
-//    }
-
-    
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -179,18 +182,6 @@ class DndCharacter: Identifiable, ObservableObject {
         case createdAt
         case stats
     }
-    
-    
-//    func encode(to encoder: Encoder) throws {
-//        var container = encoder.container(keyedBy: CodingKeys.self)
-//        try container.encode(id, forKey: .id)
-//        try container.encode(name, forKey: .name)
-//        try container.encode(race, forKey: .race)
-//        try container.encode(level, forKey: .level)
-//        try container.encode(dndClass, forKey: .dndClass)
-//        try container.encode(profileImagePath, forKey: .profileImagePath)
-//    }
-
 }
 
 extension DndCharacter {

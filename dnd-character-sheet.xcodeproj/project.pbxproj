@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		252FFF412ACC97D700A38C20 /* EditSkill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252FFF402ACC97D700A38C20 /* EditSkill.swift */; };
 		25333B4D2ACB047800B19F03 /* EditProfBonus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25333B4C2ACB047800B19F03 /* EditProfBonus.swift */; };
 		25333B4F2ACB05E500B19F03 /* EditPassiveWis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25333B4E2ACB05E500B19F03 /* EditPassiveWis.swift */; };
+		25333B512ACB087400B19F03 /* EditAbilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25333B502ACB087400B19F03 /* EditAbilities.swift */; };
+		25333B532ACB097D00B19F03 /* EditAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25333B522ACB097D00B19F03 /* EditAbility.swift */; };
+		25336E6E2ACCA1900009335A /* EditSkills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25336E6D2ACCA1900009335A /* EditSkills.swift */; };
+		2537FB0A2ACD8E6100157ABE /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537FB092ACD8E6100157ABE /* Colors.swift */; };
+		2537FB0E2ACD994900157ABE /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537FB0D2ACD994900157ABE /* Example.swift */; };
+		2537FB112ACDAEE900157ABE /* ExampleSubPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537FB102ACDAEE900157ABE /* ExampleSubPage.swift */; };
+		2537FB132ACDB0B500157ABE /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2537FB122ACDB0B500157ABE /* CustomTabView.swift */; };
 		253EAB212AC833DE00405111 /* AutoSavingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253EAB202AC833DE00405111 /* AutoSavingTextField.swift */; };
 		253EAB242AC8390A00405111 /* PreviewSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253EAB232AC8390900405111 /* PreviewSampleData.swift */; };
 		253EAB272AC83B3500405111 /* EditHP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253EAB262AC83B3500405111 /* EditHP.swift */; };
@@ -60,8 +68,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		252FFF402ACC97D700A38C20 /* EditSkill.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSkill.swift; sourceTree = "<group>"; };
 		25333B4C2ACB047800B19F03 /* EditProfBonus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfBonus.swift; sourceTree = "<group>"; };
 		25333B4E2ACB05E500B19F03 /* EditPassiveWis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPassiveWis.swift; sourceTree = "<group>"; };
+		25333B502ACB087400B19F03 /* EditAbilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAbilities.swift; sourceTree = "<group>"; };
+		25333B522ACB097D00B19F03 /* EditAbility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAbility.swift; sourceTree = "<group>"; };
+		25336E6D2ACCA1900009335A /* EditSkills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSkills.swift; sourceTree = "<group>"; };
+		2537FB092ACD8E6100157ABE /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		2537FB0D2ACD994900157ABE /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		2537FB102ACDAEE900157ABE /* ExampleSubPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSubPage.swift; sourceTree = "<group>"; };
+		2537FB122ACDB0B500157ABE /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
 		253EAB202AC833DE00405111 /* AutoSavingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoSavingTextField.swift; sourceTree = "<group>"; };
 		253EAB232AC8390900405111 /* PreviewSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewSampleData.swift; sourceTree = "<group>"; };
 		253EAB262AC83B3500405111 /* EditHP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHP.swift; sourceTree = "<group>"; };
@@ -124,6 +140,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2537FB0F2ACDAED800157ABE /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				2537FB0D2ACD994900157ABE /* Example.swift */,
+				2537FB102ACDAEE900157ABE /* ExampleSubPage.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		253EAB222AC838E600405111 /* PreviewHelpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +168,10 @@
 				25FB8E042AC9BA0900C62439 /* EditInitiative.swift */,
 				25333B4C2ACB047800B19F03 /* EditProfBonus.swift */,
 				25333B4E2ACB05E500B19F03 /* EditPassiveWis.swift */,
+				252FFF402ACC97D700A38C20 /* EditSkill.swift */,
+				25336E6D2ACCA1900009335A /* EditSkills.swift */,
+				25333B502ACB087400B19F03 /* EditAbilities.swift */,
+				25333B522ACB097D00B19F03 /* EditAbility.swift */,
 			);
 			path = StatsView;
 			sourceTree = "<group>";
@@ -183,6 +212,7 @@
 		25D0D9EB2AC3072300ED2EF9 /* dnd-character-sheet */ = {
 			isa = PBXGroup;
 			children = (
+				2537FB0F2ACDAED800157ABE /* Example */,
 				253EAB222AC838E600405111 /* PreviewHelpers */,
 				25D0DA1A2AC3091500ED2EF9 /* Models */,
 				25D0DA172AC308E000ED2EF9 /* Views */,
@@ -226,8 +256,8 @@
 				257EB9BA2AC6CB2200A2BFE5 /* CharacterTabs */,
 				25D0DA1F2AC356D100ED2EF9 /* UI */,
 				25D0DA182AC308EF00ED2EF9 /* CharactersOverview.swift */,
-				25D0DA1D2AC30F1400ED2EF9 /* CreateCharacter.swift */,
 				257DFD432AC44AA100DBF07C /* CharacterView.swift */,
+				25D0DA1D2AC30F1400ED2EF9 /* CreateCharacter.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -237,6 +267,7 @@
 			children = (
 				257DFD412AC4195600DBF07C /* CharacterStore.swift */,
 				25D0DA1B2AC3092900ED2EF9 /* DndCharacter.swift */,
+				2537FB092ACD8E6100157ABE /* Colors.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -250,6 +281,7 @@
 				253EAB202AC833DE00405111 /* AutoSavingTextField.swift */,
 				253EAB282AC844F100405111 /* NumberField.swift */,
 				25EFEFD42AC99E100044454A /* EditSheet.swift */,
+				2537FB122ACDB0B500157ABE /* CustomTabView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -393,10 +425,13 @@
 				25FB8E052AC9BA0900C62439 /* EditInitiative.swift in Sources */,
 				257EB9BC2AC6CB3800A2BFE5 /* GeneralCharacterInfo.swift in Sources */,
 				25333B4F2ACB05E500B19F03 /* EditPassiveWis.swift in Sources */,
+				252FFF412ACC97D700A38C20 /* EditSkill.swift in Sources */,
 				25D0DA1C2AC3092900ED2EF9 /* DndCharacter.swift in Sources */,
+				25333B532ACB097D00B19F03 /* EditAbility.swift in Sources */,
 				25D0DA252AC366EB00ED2EF9 /* ProfileImage.swift in Sources */,
 				25333B4D2ACB047800B19F03 /* EditProfBonus.swift in Sources */,
 				25EFEFD22AC99D0B0044454A /* HitDiceView.swift in Sources */,
+				25336E6E2ACCA1900009335A /* EditSkills.swift in Sources */,
 				257EB9BE2AC6CC7600A2BFE5 /* InventoryView.swift in Sources */,
 				257EB9C42AC6CCB200A2BFE5 /* StatsView.swift in Sources */,
 				25EFEFD82AC9B1C40044454A /* MainStats.swift in Sources */,
@@ -404,6 +439,8 @@
 				25D0D9EF2AC3072300ED2EF9 /* ContentView.swift in Sources */,
 				253EAB242AC8390A00405111 /* PreviewSampleData.swift in Sources */,
 				25EFEFD52AC99E100044454A /* EditSheet.swift in Sources */,
+				2537FB0E2ACD994900157ABE /* Example.swift in Sources */,
+				2537FB112ACDAEE900157ABE /* ExampleSubPage.swift in Sources */,
 				25D0DA212AC356F400ED2EF9 /* LabelTextField.swift in Sources */,
 				253EAB292AC844F100405111 /* NumberField.swift in Sources */,
 				257DFD422AC4195600DBF07C /* CharacterStore.swift in Sources */,
@@ -412,11 +449,14 @@
 				25D0D9ED2AC3072300ED2EF9 /* dnd_character_sheetApp.swift in Sources */,
 				257EB9C22AC6CC9300A2BFE5 /* Spellsview.swift in Sources */,
 				257EB9C02AC6CC8200A2BFE5 /* CombatView.swift in Sources */,
+				2537FB132ACDB0B500157ABE /* CustomTabView.swift in Sources */,
+				2537FB0A2ACD8E6100157ABE /* Colors.swift in Sources */,
 				25FF2C642AC977F7002F323E /* ShowHP.swift in Sources */,
 				25D0DA192AC308EF00ED2EF9 /* CharactersOverview.swift in Sources */,
 				253EAB212AC833DE00405111 /* AutoSavingTextField.swift in Sources */,
 				25D0DA1E2AC30F1400ED2EF9 /* CreateCharacter.swift in Sources */,
 				25EFEFD02AC9946C0044454A /* ACView.swift in Sources */,
+				25333B512ACB087400B19F03 /* EditAbilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

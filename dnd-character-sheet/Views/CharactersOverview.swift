@@ -14,6 +14,7 @@ struct CharactersOverview: View {
 //    @Binding var characters: [DndCharacter]
     @State var showCreateCharacter = false
     
+    
     var body: some View {
         NavigationStack {
             List {
@@ -35,6 +36,7 @@ struct CharactersOverview: View {
                             }
                         }
                     }
+                    .isDetailLink(false)
                 }
                 .onDelete(perform: { offsets in
                     for index in offsets {

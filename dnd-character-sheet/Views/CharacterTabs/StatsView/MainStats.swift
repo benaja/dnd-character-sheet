@@ -30,15 +30,7 @@ struct MainStats: View {
                 .frame(minWidth: 0, maxWidth: .infinity)
             
             EditPassiveWis(character: $character)
-                .frame(minWidth: 0, maxWidth: .infinity)
-//
-//            VStack {
-//                Text("Passive Wis")
-//                    .font(.caption)
-//                Text(String(character.dex.value + character.initiativeBonus))
-//                    .font(.title)
-//            }.frame(minWidth: 0, maxWidth: .infinity)
-            
+                .frame(minWidth: 0, maxWidth: .infinity)            
         }.keyboardType(.numberPad)
     }
 }

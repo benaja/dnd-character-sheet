@@ -21,29 +21,30 @@ struct NumberField:View {
     }
     var body: some View {
         HStack (alignment: .center) {
+            TextField(label, text: Binding(
+                get: { value != nil ? "\(value!)" : ""},
+                set: { setValue(Int($0) ?? nil) }
+            ))
+            .keyboardType(.numberPad)
+                .multilineTextAlignment(.leading)
+//                .frame(height: 40)
+                .onSubmit {
+                    print("Text was submitted")
+                }
+                .submitLabel(.done)
+            Spacer()
             Button(action: {
                 setValue((value ?? 0) - 1)
             }) {
                 Image(systemName: "minus")
             }
-            TextField(label, text: Binding(
-                get: { value != nil ? "\(value!)" : ""},
-                set: { setValue(Int($0) ?? nil) }
-            ))
-                .keyboardType(.numberPad)
-                .multilineTextAlignment(.center)
-                .frame(width: 60, height: 50)
-                .onSubmit {
-                    print("Text was submitted")
-                }
-                .submitLabel(.done)
+            .padding(.horizontal, 10)
             Button(action: {
                 setValue((value ?? 0) + 1)
             }) {
                 Image(systemName: "plus")
             }
         }
-        .font(.title)
     }
     
     func setValue(_ value: Int?) {
