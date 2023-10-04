@@ -21,10 +21,11 @@ struct CustomLabelStyle: LabelStyle {
 
 struct ExampleSubPage: View {
     var body: some View {
-        CustomTabView{
-            Text("Test")
-                .customTabItem(Label("Stats", systemImage: "chart.bar.fill"))
-        }
+        Text("sdfa")
+//        CustomTabView{
+//            Text("Test")
+//                .customTabItem(Label("Stats", systemImage: "chart.bar.fill"), tag: 1)
+//        }
 //        VStack {
 //            ScrollView {
 //                ForEach(0 ..< 40) { item in

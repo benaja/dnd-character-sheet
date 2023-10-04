@@ -15,7 +15,7 @@ struct CharacterView: View {
     @State private var offset = CGFloat.zero
 
     
-    enum TabViews {
+    enum TabViews: Hashable {
         case stats
         case inventory
         case combat
@@ -46,42 +46,32 @@ struct CharacterView: View {
     var body: some View {
         ZStack {
             Colors.PrimaryBackground.color.ignoresSafeArea()
-            CustomTabView() {
-                //            ScrollView {
-                //                VStack (spacing: 20) {
-                //                    ForEach(0 ..< 20) { child in
-                //                        Text(String(child))
-                //                    }.tabItem {
-                //                        Text("Tab 1")
-                //                    }
-                //                }
-                //            }
-                //
-                //            List(0 ..< 6) { child in
-                //                Text("Child \(child)")
-                //            }.tabItem {
-                //                Text("Tab 1")
-                //            }
+            CustomTabView(selection: $selection) {
                 StatsView(character: .constant(character))
                     .customTabItem(
-                        Label("Stats", systemImage: "chart.bar.fill")
-                    ).tag(TabViews.stats)
+                        Label("Stats", systemImage: "chart.bar.fill"),
+                        tag: TabViews.stats
+                    )
                 InventoryView()
                     .customTabItem (
-                        Label("Inventory", systemImage: "backpack.fill")
-                    ).tag(TabViews.inventory)
-    //                CombatView()
-    //                    .tabItem {
-    //                        Label("Combat", systemImage: "xmark.shield")
-    //                    }.tag(TabViews.combat)
-    //                Spellsview()
-    //                    .tabItem {
-    //                        Label("Spells", systemImage: "flame")
-    //                    }.tag(TabViews.spells)
-    //                GeneralCharacterInfo(character: .constant(character))
-    //                    .tabItem {
-    //                        Label("Character", systemImage: "figure.stand")
-    //                    }.tag(TabViews.character)
+                        Label("Inventory", systemImage: "backpack.fill"),
+                        tag: TabViews.inventory
+                    )
+                CombatView()
+                    .customTabItem(
+                        Label("Combat", systemImage: "xmark.shield"),
+                        tag: TabViews.combat
+                    )
+                Spellsview()
+                    .customTabItem(
+                        Label("Spells", systemImage: "flame"),
+                        tag: TabViews.spells
+                    )
+                GeneralCharacterInfo(character: .constant(character))
+                    .customTabItem(
+                        Label("Character", systemImage: "figure.stand"),
+                        tag: TabViews.character
+                    )
                 
             }
             .listRowBackground(Colors.PrimaryBackground.color)

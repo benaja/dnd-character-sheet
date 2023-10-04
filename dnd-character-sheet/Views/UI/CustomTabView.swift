@@ -7,35 +7,45 @@
 
 import SwiftUI
 
-class TabViewItem: ObservableObject {
+class TabViewItem: ObservableObject, Identifiable {
     var id: any Hashable = UUID().uuidString
     var view: Label<Text, Image>
-    @Published var isSelected: Bool = false
     
-    init(view: Label<Text, Image>, isSelected: Bool = false) {
+    init(view: Label<Text, Image>, id: any Hashable) {
         self.view = view
-        self.isSelected = isSelected
+        self.id = id
     }
 }
 
 class TabViewObject: ObservableObject {
     @Published var tabViews: [TabViewItem] = []
     @Published var selectedId: any Hashable = 0
+    
+    func addTab(_ tab: TabViewItem) {
+//        if tabViews.count == 0 && selectedId == nil {
+//            selectedId = tab.id
+//        }
+        tabViews.append(tab)
+    }
 }
 
-struct CustomTabView<Content: View>: View {
-    @ViewBuilder var content: Content
+struct CustomTabView<SelectionValue: Hashable, Content: View>: View {
+    @Binding var selection: SelectionValue
+    var content: () -> Content
         
     @ObservedObject var tabViewObject = TabViewObject()
     
-//    init (_ content: () -> Content) {
-//        self.content = content
-//    }
-//    
+//    init(selection: Binding)
+    
+    init (selection: Binding<SelectionValue>?, @ViewBuilder _ content: @escaping () -> Content) {
+        self.content = content
+        self._selection = selection ?? Binding.constant(0 as! SelectionValue)
+    }
+//
     var body: some View {
         VStack {
             ScrollView {
-                content
+                content()
             }.frame(maxWidth: .infinity)
                 .environmentObject(tabViewObject)
             
@@ -49,7 +59,7 @@ struct CustomTabView<Content: View>: View {
                     }) {
                         tabView.view
                     }.frame(maxWidth: .infinity)
-                        .foregroundColor(tabView.isSelected ? .blue : .gray)
+                        .foregroundColor(tabView.id.hashValue == tabViewObject.selectedId.hashValue ? .blue : .gray)
                 }
                 
                 //                            Label("Combat", systemImage: "xmark.shield")
@@ -66,25 +76,34 @@ struct CustomTabView<Content: View>: View {
     }
 }
 
+extension CustomTabView where SelectionValue == Int {
+    init(@ViewBuilder _ content: @escaping () -> Content) {
+        self.init(selection: Binding.constant(0), content)
+    }
+}
+
 struct CustomTabItem: ViewModifier {
     @EnvironmentObject var tabview: TabViewObject
+    var tag: any Hashable
     
-    @ObservedObject var label: TabViewItem
-
-    init(_ label: Label<Text, Image>) {
-        self.label = TabViewItem(view: label)
+    var label: Label<Text, Image>
+    var item: TabViewItem?
+    
+   
+    init(_ label: Label<Text, Image>, tag: any Hashable) {
+        self.label = label
+        self.tag = tag
     }
     
     func body(content: Content)-> some View {
-        let item = tabview.tabViews.first(where:{ $0.id == label.id})
+        let item = tabview.tabViews.first(where:{ $0.id.hashValue == tag.hashValue})
         if item == nil {
-            tabview.tabViews.append(label)
+            tabview.addTab(TabViewItem(view: label, id: tag))
         }
-        
-        print(tabview.tabViews.count)
+               
         
         return Group {
-            if label.id == tabview.selectedId {
+            if tabview.selectedId.hashValue == tag.hashValue {
                 content
             } else {
                 EmptyView()
@@ -94,24 +113,27 @@ struct CustomTabItem: ViewModifier {
 }
 
 extension View {
-    func customTabItem(_ content: Label<Text, Image>) -> some View {
+//    @EnvironmentObject var tabview: TabViewObject
+    
+    func customTabItem(_ content: Label<Text, Image>, tag: any Hashable) -> some View {
         modifier(
-            CustomTabItem(content))
+            CustomTabItem(content, tag: tag))
     }
 }
 
-
 #Preview {
-    CustomTabView() {
+    @State var selection: Int = 0
+    
+    return CustomTabView() {
         VStack {
             ForEach(0 ..< 40) { item in
                 Text("hey there")
             }
-        }.customTabItem(Label("Stats", systemImage: "chart.bar.fill"))
+        }.customTabItem(Label("Stats", systemImage: "chart.bar.fill"), tag: 0)
         
         VStack {
             Text("Second")
-        }.customTabItem(Label("Inventory", systemImage: "backpack.fill"))
+        }.customTabItem(Label("Inventory", systemImage: "backpack.fill"), tag: 1)
 
     }
 }
